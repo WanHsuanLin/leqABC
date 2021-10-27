@@ -210,11 +210,11 @@ int         Leq_CheckEquivalent(Abc_Ntk_t * pNtk1, Abc_Ntk_t * & pNtk2);
 /*******************************************/
 //     Eliminate Quantifier by Manthan     //
 /*******************************************/
-void        Leq_EliminateVarManthan(Abc_Ntk_t * &pNtk, unsigned uBegin, Leq_Ba_t * pBa);
-Abc_Ntk_t * Leq_NtkPutOnTop( Abc_Ntk_t * pNtk, Abc_Ntk_t * pNtk2, int latchBegin );
+// void        Leq_EliminateVarManthan(Abc_Ntk_t * &pNtk, unsigned uBegin, Leq_Ba_t * pBa);
+// Abc_Ntk_t * Leq_NtkPutOnTop( Abc_Ntk_t * pNtk, Abc_Ntk_t * pNtk2, int latchBegin );
 // void        Leq_RunManthan(string vFileName, string varFileName);
-void        Leq_RunManthan(char* vFileName, char* varFileName);
-void        Leq_EliminateVarCadet(Abc_Ntk_t * &pNtk, unsigned uBegin, Leq_Ba_t * pBa);
+// void        Leq_RunManthan(char* vFileName, char* varFileName);
+// void        Leq_EliminateVarCadet(Abc_Ntk_t * &pNtk, unsigned uBegin, Leq_Ba_t * pBa);
 // Abc_Ntk_t * Leq_makeOnePo(Abc_Ntk_t * pNtk);
 
 /*******************************************/

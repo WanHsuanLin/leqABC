@@ -9,7 +9,5 @@ SRC += \
     src/leqSolving/leqInpro.cpp \
     src/leqSolving/leqInpro2.cpp \
     src/leqSolving/leqEliQuan.cpp \
-    src/leqSolving/leqEliQuanManthan.cpp \
-    src/leqSolving/leqEliQuanCadet.cpp \
     src/leqSolving/util.cpp
 

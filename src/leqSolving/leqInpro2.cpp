@@ -19,10 +19,14 @@ void Leq_InputProgressive2(Leq_Ba_t* pBa, unordered_set<string> & sU, int qSolve
     pNtkCheck = Abc_NtkDup(Leq_BaTransCir(pBa));
     if(verbose) Abc_NtkPrintStats( pNtkCheck, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 );
     // getchar();
-    if(qSolver == 1)
-      Leq_EliminateVarCadet(pNtkCheck, uBegin, pBa);
-    if(qSolver == 2)
-      Leq_EliminateVarManthan(pNtkCheck, uBegin, pBa);
+    if(qSolver == 1){
+      cerr << "Not avaliable!!!" << endl;
+    }
+      // Leq_EliminateVarCadet(pNtkCheck, uBegin, pBa);
+    if(qSolver == 2){
+      cerr << "Not avaliable!!!" << endl;
+      // Leq_EliminateVarManthan(pNtkCheck, uBegin, pBa);
+    }
     else
       Leq_EliminateVar(pNtkCheck, uBegin, pBa);
     // Leq_EliminateVarManthan(pNtkCheck, uBegin, pBa);

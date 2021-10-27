@@ -22,6 +22,6 @@ You can also run the `ssat` command from the console, as the following examples 
 ## Benchmarks
 
 All benchmarks are in directory `benchmark/` and `casestudy/`.  Directory `benchmark` contains ISCAS (directory `iccas`) and ITC (directory`itc99-poli/i99t/`) benchmarks.
-For ISCAS benchmark, each directory in `iccas` consists of the original circuit `s*.bench`, the fixed component `s*fle.mv`, a particular solution to the unknown part X `s*X.mv`, and  two scripts.
-
+For ISCAS benchmark, each directory in `iccas` consists of the original circuit S `s*.bench`, the fixed component `s*fle.mv`, a particular solution to the unknown part X `s*X.mv`, and two scripts.
+The script `s*abc.script` is used to solve the language equation problem.
 

@@ -71,6 +71,7 @@ int Leq_CommandSolve(Abc_Frame_t* pAbc, int argc, char** argv) {
   bool bDirectVerifyDeter = 0;
   int qSolver = 0;
   bool fFileUV = 0;
+  bool bOutput = 0;
   int fUseCommand = 0;
 
   // nInput = Abc_NtkPiNum(pNtkF)+Abc_NtkPoNum(pNtkF);
@@ -97,12 +98,15 @@ int Leq_CommandSolve(Abc_Frame_t* pAbc, int argc, char** argv) {
   pPars->TimeLimit  = 0;
 
   Extra_UtilGetoptReset();
-  while ((c = Extra_UtilGetopt(argc, argv, "fhvcidz")) != EOF) {
+  while ((c = Extra_UtilGetopt(argc, argv, "fhvcidzo")) != EOF) {
     switch (c) {
       case 'h':
         goto usage;
       case 'f':
         fFileUV ^= 1;
+        break;
+      case 'o':
+        bOutput ^= 1;
         break;
       case 'z':
         bDirectVerifyDeter ^= 1;
@@ -276,7 +280,7 @@ int Leq_CommandSolve(Abc_Frame_t* pAbc, int argc, char** argv) {
   }
   // !
   cerr << "---------end solving---------" << endl;
-  Io_Write( Leq_BaTransCir(pBaX), "rABAX.blif", IO_FILE_BLIF );
+  if(bOutput) Io_Write( Leq_BaTransCir(pBaX), "rABAX.blif", IO_FILE_BLIF );
   clk = Abc_Clock();
   if(bDirectVerify){
     if ( !Abc_NtkIsStrash(pNtkXd) ){
@@ -336,10 +340,10 @@ int Leq_CommandSolve(Abc_Frame_t* pAbc, int argc, char** argv) {
   return 0;
 
 usage:
-  Abc_Print(-2, "usage: [-i num] [-d file] [-v file] [-z file] [-fhc] <u> <v> <baS> <baF>\n");
+  Abc_Print(-2, "usage: [-i num] [-d file] [-v file] [-z file] [-fhoc] <u> <v> <baS> <baF>\n");
   Abc_Print(-2, "\t        solves langage equation X given F and S. \n");
   Abc_Print(-2, "\t        enter u, v with each input separated by ','\n");
-  Abc_Print(-2, "\t        the resulted sequential circuit representing the solution rABA is written in rABAX.blif\n");
+  Abc_Print(-2, "\t-o     : write the resulted sequential circuit representing the solution rABA is written in rABAX.blif\n");
   Abc_Print(-2, "\t        with the pi not in <u> <v> being the psuedo inputs for rABA\n");
   Abc_Print(-2, "\t-v file: verify \n");
   Abc_Print(-2, "\t-f     : U V are given in files  \n");
