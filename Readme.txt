@@ -29,3 +29,10 @@ The script `s*abc.script` is used to solve the language equation problem and the
 For ITC benchmark, each directory in `itc99-poli/i99t/` consists of the original circuit S `b*.blif`, the fixed component `s*fle.blif`, a particular solution to the unknown part X `s*X.blif`, and two scripts.
 The script `b*abc.script` is used to solve the language equation problem and the script `b*abcv.script` will solve the language equation problem and verify the solution.
 
+## Reproduce the experimental results
+There are two scripts.
+To run ISCAS benchmarks, type `./runabcIccas.sh <num of circuit>`. For example, type `./runabcIccas.sh 208` to solve language equation with circuit s208.
+To run ISCAS benchmarks and verify the solution, type `./runabcIccas.sh <num of circuit> v`.  For example, type `./runabcIccas.sh 208 v` to solve language equation and verify the solution with circuit s208.
+
+To run ITC benchmarks, type `./runabcItc.sh <num of circuit>`. For example, type `./runabcItc.sh 01` to solve language equation with circuit b01.
+To run ITC benchmarks and verify the solution, type `./runabcItc.sh <num of circuit> v`.  For example, type `./runabcItc.sh 01 v` to solve language equation and verify the solution with circuit b01.
