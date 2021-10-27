@@ -1,0 +1,17 @@
+Performing C++ SOURCE FILE Test CXX_COMPILER_SUPPORTS__-Wstrict-prototypes failed with the following output:
+Change Dir: /home/hsuan/iccad/abc/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_02ba3/fast && /usr/bin/make -f CMakeFiles/cmTC_02ba3.dir/build.make CMakeFiles/cmTC_02ba3.dir/build
+make[1]: Entering directory '/home/hsuan/iccad/abc/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_02ba3.dir/src.cxx.o
+/usr/bin/c++    -DCXX_COMPILER_SUPPORTS__-Wstrict-prototypes   -Wstrict-prototypes -o CMakeFiles/cmTC_02ba3.dir/src.cxx.o -c /home/hsuan/iccad/abc/CMakeFiles/CMakeTmp/src.cxx
+cc1plus: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++
+<command-line>: warning: ISO C++11 requires whitespace after the macro name
+Linking CXX executable cmTC_02ba3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_02ba3.dir/link.txt --verbose=1
+/usr/bin/c++   -DCXX_COMPILER_SUPPORTS__-Wstrict-prototypes    -rdynamic CMakeFiles/cmTC_02ba3.dir/src.cxx.o  -o cmTC_02ba3 
+make[1]: Leaving directory '/home/hsuan/iccad/abc/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
