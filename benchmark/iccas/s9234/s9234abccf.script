@@ -1,0 +1,1 @@
+solve -f -v benchmark/iccas/s9234/s9234X.blif benchmark/iccas/s9234/s9234U.txt benchmark/iccas/s9234/s9234V.txt benchmark/iccas/s9234/s9234.bench benchmark/iccas/s9234/s9234fle.blif 

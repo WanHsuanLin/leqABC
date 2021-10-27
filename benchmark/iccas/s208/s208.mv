@@ -1,0 +1,343 @@
+.model benchmark/iccas/s208/s208.bench
+.spec benchmark/iccas/s208/s208.bench
+.inputs X Clear C_8 C_7 C_6 C_5 C_4 C_3 C_2 C_1 C_0
+.outputs W Z
+.default_input_arrival 0 0
+
+.reset Y_4
+0
+.latch II3 Y_4
+.reset Y_3
+0
+.latch II4 Y_3
+.reset Y_2
+0
+.latch II5 Y_2
+.reset Y_1
+0
+.latch II6 Y_1
+.reset Y_8
+0
+.latch II155 Y_8
+.reset Y_7
+0
+.latch II156 Y_7
+.reset Y_6
+0
+.latch II157 Y_6
+.reset Y_5
+0
+.latch II158 Y_5
+
+.table II113 Y_1 II100
+.default 0
+- 0  1
+0 -  1
+.table II113 II44 II104
+.default 0
+- 0  1
+0 -  1
+.table II100 II43 II109
+.default 0
+0 0  1
+.table Clear II40 II113
+.default 0
+0 0  1
+.table II109 II41 Y_3 II127_1
+.default 0
+1 1 1  1
+.table II113 II96 Y_4 II127_2
+.default 0
+1 1 1  1
+.table II113 II92 Y_3 II131_1
+.default 0
+1 1 1  1
+.table II109 II42 II131_2
+.default 0
+1 1  1
+.table II104 II43 II135_1
+.default 0
+- 1  1
+1 -  1
+.table II100 Y_2 II135_2
+.default 0
+- 1  1
+1 -  1
+.table II1_1 II192
+.default 0
+0  1
+.table Y_8 II193
+.default 0
+0  1
+.table Y_7 II194
+.default 0
+0  1
+.table Y_6 II195
+.default 0
+0  1
+.table Y_5 II196
+.default 0
+0  1
+.table II279_1 II279_2 II198
+.default 0
+0 0  1
+.table II283_1 II283_2 II199
+.default 0
+0 0  1
+.table II41 II96 II1_1
+.default 0
+0 0  1
+.table II244 II202
+.default 0
+0  1
+.table Y_5 Y_6 II244
+.default 0
+- 0  1
+0 -  1
+.table II202 Y_7 II248
+.default 0
+- 0  1
+0 -  1
+.table II265 Y_5 II252
+.default 0
+- 0  1
+0 -  1
+.table II196 II265 II256
+.default 0
+- 0  1
+0 -  1
+.table II195 II252 II261
+.default 0
+0 0  1
+.table Clear II192 II265
+.default 0
+0 0  1
+.table II193 II261 Y_7 II279_1
+.default 0
+1 1 1  1
+.table II248 II265 Y_8 II279_2
+.default 0
+1 1 1  1
+.table II244 II265 Y_7 II283_1
+.default 0
+1 1 1  1
+.table II194 II261 II283_2
+.default 0
+1 1  1
+.table II195 II256 II287_1
+.default 0
+- 1  1
+1 -  1
+.table II252 Y_6 II287_2
+.default 0
+- 1  1
+1 -  1
+.table II341 II307_1
+.default 0
+0  1
+.table Y_1 II309
+.default 0
+0  1
+.table Y_2 II310
+.default 0
+0  1
+.table Y_3 II311
+.default 0
+0  1
+.table X Y_1 II314
+.default 0
+- 0  1
+0 -  1
+.table II347 Y_3 II316
+.default 0
+- 0  1
+0 -  1
+.table II318 Y_4 II317
+.default 0
+- 0  1
+0 -  1
+.table II341 II318
+.default 0
+0  1
+.table II311 II347 II341
+.default 0
+- 0  1
+0 -  1
+.table II350 Y_2 II347
+.default 0
+0 0  1
+.table II309 X II350
+.default 0
+- 0  1
+0 -  1
+.table Y_4 II368
+.default 0
+0  1
+.table Y_5 II369
+.default 0
+0  1
+.table Y_6 II370
+.default 0
+0  1
+.table Y_7 II371
+.default 0
+0  1
+.table Y_8 II372
+.default 0
+0  1
+.table II406 Y_6 II374
+.default 0
+- 0  1
+0 -  1
+.table II370 II406 II378
+.default 0
+- 0  1
+0 -  1
+.table X II40
+.default 0
+0  1
+.table II409 Y_5 II406
+.default 0
+0 0  1
+.table II307_1 II368 II409
+.default 0
+- 0  1
+0 -  1
+.table Y_4 II41
+.default 0
+0  1
+.table Y_3 II42
+.default 0
+0  1
+.table Y_2 II43
+.default 0
+0  1
+.table Y_1 II44
+.default 0
+0  1
+.table II487 II495 II497_1 II446
+.default 0
+0 0 0  1
+.table II127_1 II127_2 II46
+.default 0
+0 0  1
+.table II131_1 II131_2 II47
+.default 0
+0 0  1
+.table II500_1 II500_2 II484
+.default 0
+0 0  1
+.table II488 II487
+.default 0
+0  1
+.table II504_1 II504_2 II488
+.default 0
+0 0  1
+.table II490 II489
+.default 0
+0  1
+.table II508_1 II508_2 II490
+.default 0
+0 0  1
+.table II489 II512_1 II512_2 II494
+.default 0
+0 0 0  1
+.table II484 II494 II495
+.default 0
+- 0  1
+0 -  1
+.table C_8 P_8 II497_1
+.default 0
+1 1  1
+.table II92 II50
+.default 0
+0  1
+.table C_5 P_5 II500_1
+.default 0
+1 1  1
+.table C_2 P_2 II500_2
+.default 0
+1 1  1
+.table C_3 P_3 II504_1
+.default 0
+1 1  1
+.table C_4 P_4 II504_2
+.default 0
+1 1  1
+.table C_0 X II508_1
+.default 0
+1 1  1
+.table C_1 P_1 II508_2
+.default 0
+1 1  1
+.table C_6 P_6 II512_1
+.default 0
+1 1  1
+.table C_7 P_7 II512_2
+.default 0
+1 1  1
+.table Y_1 Y_2 II92
+.default 0
+- 0  1
+0 -  1
+.table II50 Y_3 II96
+.default 0
+- 0  1
+0 -  1
+.table II314 P_1
+.default 0
+0  1
+.table II310 II350 P_2
+.default 0
+0 0  1
+.table II316 P_3
+.default 0
+0  1
+.table II317 P_4
+.default 0
+0  1
+.table II369 II409 P_5
+.default 0
+0 0  1
+.table II374 P_6
+.default 0
+0  1
+.table II371 II378 P_7
+.default 0
+0 0  1
+.table II372 II378 Y_7 P_8
+.default 0
+0 0 0  1
+.table II104 II6
+.default 0
+0  1
+.table II46 II3
+.default 0
+0  1
+.table II47 II4
+.default 0
+0  1
+.table II256 II158
+.default 0
+0  1
+.table II198 II155
+.default 0
+0  1
+.table II199 II156
+.default 0
+0  1
+.table II446 Z
+.default 0
+0  1
+.table II135_1 II135_2 II5
+.default 0
+- 0  1
+0 -  1
+.table II287_1 II287_2 II157
+.default 0
+- 0  1
+0 -  1
+.table II193 II248 W
+.default 0
+0 0  1
+.end

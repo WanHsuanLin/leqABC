@@ -1,0 +1,226 @@
+.model benchmark/iccas/s208/s208.bench
+.inputs X Clear C_8 C_7 C_6 C_5 C_4 C_3 C_2 C_1 C_0 Y_8 Y_7 Y_6 Y_5
+.outputs W Z
+.default_input_arrival 0 0
+
+.latch II3 Y_4  0
+.latch II4 Y_3  0
+.latch II5 Y_2  0
+.latch II6 Y_1  0
+
+.names II113 Y_1 II100
+-0 1
+0- 1
+.names II113 II44 II104
+-0 1
+0- 1
+.names II100 II43 II109
+00 1
+.names Clear II40 II113
+00 1
+.names II109 II41 Y_3 II127_1
+111 1
+.names II113 II96 Y_4 II127_2
+111 1
+.names II113 II92 Y_3 II131_1
+111 1
+.names II109 II42 II131_2
+11 1
+.names II104 II43 II135_1
+-1 1
+1- 1
+.names II100 Y_2 II135_2
+-1 1
+1- 1
+.names II1_1 II192
+0 1
+.names Y_8 II193
+0 1
+.names Y_7 II194
+0 1
+.names Y_6 II195
+0 1
+.names Y_5 II196
+0 1
+.names II279_1 II279_2 II198
+00 1
+.names II283_1 II283_2 II199
+00 1
+.names II41 II96 II1_1
+00 1
+.names II244 II202
+0 1
+.names Y_5 Y_6 II244
+-0 1
+0- 1
+.names II202 Y_7 II248
+-0 1
+0- 1
+.names II265 Y_5 II252
+-0 1
+0- 1
+.names II196 II265 II256
+-0 1
+0- 1
+.names II195 II252 II261
+00 1
+.names Clear II192 II265
+00 1
+.names II193 II261 Y_7 II279_1
+111 1
+.names II248 II265 Y_8 II279_2
+111 1
+.names II244 II265 Y_7 II283_1
+111 1
+.names II194 II261 II283_2
+11 1
+.names II195 II256 II287_1
+-1 1
+1- 1
+.names II252 Y_6 II287_2
+-1 1
+1- 1
+.names II341 II307_1
+0 1
+.names Y_1 II309
+0 1
+.names Y_2 II310
+0 1
+.names Y_3 II311
+0 1
+.names X Y_1 II314
+-0 1
+0- 1
+.names II347 Y_3 II316
+-0 1
+0- 1
+.names II318 Y_4 II317
+-0 1
+0- 1
+.names II341 II318
+0 1
+.names II311 II347 II341
+-0 1
+0- 1
+.names II350 Y_2 II347
+00 1
+.names II309 X II350
+-0 1
+0- 1
+.names Y_4 II368
+0 1
+.names Y_5 II369
+0 1
+.names Y_6 II370
+0 1
+.names Y_7 II371
+0 1
+.names Y_8 II372
+0 1
+.names II406 Y_6 II374
+-0 1
+0- 1
+.names II370 II406 II378
+-0 1
+0- 1
+.names X II40
+0 1
+.names II409 Y_5 II406
+00 1
+.names II307_1 II368 II409
+-0 1
+0- 1
+.names Y_4 II41
+0 1
+.names Y_3 II42
+0 1
+.names Y_2 II43
+0 1
+.names Y_1 II44
+0 1
+.names II487 II495 II497_1 II446
+000 1
+.names II127_1 II127_2 II46
+00 1
+.names II131_1 II131_2 II47
+00 1
+.names II500_1 II500_2 II484
+00 1
+.names II488 II487
+0 1
+.names II504_1 II504_2 II488
+00 1
+.names II490 II489
+0 1
+.names II508_1 II508_2 II490
+00 1
+.names II489 II512_1 II512_2 II494
+000 1
+.names II484 II494 II495
+-0 1
+0- 1
+.names C_8 P_8 II497_1
+11 1
+.names II92 II50
+0 1
+.names C_5 P_5 II500_1
+11 1
+.names C_2 P_2 II500_2
+11 1
+.names C_3 P_3 II504_1
+11 1
+.names C_4 P_4 II504_2
+11 1
+.names C_0 X II508_1
+11 1
+.names C_1 P_1 II508_2
+11 1
+.names C_6 P_6 II512_1
+11 1
+.names C_7 P_7 II512_2
+11 1
+.names Y_1 Y_2 II92
+-0 1
+0- 1
+.names II50 Y_3 II96
+-0 1
+0- 1
+.names II314 P_1
+0 1
+.names II310 II350 P_2
+00 1
+.names II316 P_3
+0 1
+.names II317 P_4
+0 1
+.names II369 II409 P_5
+00 1
+.names II374 P_6
+0 1
+.names II371 II378 P_7
+00 1
+.names II372 II378 Y_7 P_8
+000 1
+.names II104 II6
+0 1
+.names II46 II3
+0 1
+.names II47 II4
+0 1
+.names II256 II158
+0 1
+.names II198 II155
+0 1
+.names II199 II156
+0 1
+.names II446 Z
+0 1
+.names II135_1 II135_2 II5
+-0 1
+0- 1
+.names II287_1 II287_2 II157
+-0 1
+0- 1
+.names II193 II248 W
+00 1
+.end

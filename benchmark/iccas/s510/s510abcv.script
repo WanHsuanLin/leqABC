@@ -1,0 +1,1 @@
+solve -v benchmark/iccas/s510/s510X.mv john,cnt13,cnt21,cnt284,pcnt6,cnt261,cnt44,pcnt12,pcnt17,cnt591,cnt45,cnt567,pcnt27,cnt283,cnt272,cnt10,cnt511,pcnt241,cnt509,st_2,st_1,st_0 st_5,st_4,st_3 benchmark/iccas/s510/s510.bench benchmark/iccas/s510/s510fle.mv 

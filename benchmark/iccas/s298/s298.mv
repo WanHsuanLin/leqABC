@@ -1,0 +1,458 @@
+.model benchmark/iccas/s298/s298.bench
+.spec benchmark/iccas/s298/s298.bench
+.inputs G0 G1 G2
+.outputs G117 G132 G66 G118 G133 G67
+.default_input_arrival 0 0
+
+.reset G10
+0
+.latch G29 G10
+.reset G11
+0
+.latch G30 G11
+.reset G12
+0
+.latch G34 G12
+.reset G13
+0
+.latch G39 G13
+.reset G14
+0
+.latch G44 G14
+.reset G15
+0
+.latch G56 G15
+.reset G16
+0
+.latch G86 G16
+.reset G17
+0
+.latch G92 G17
+.reset G18
+0
+.latch G98 G18
+.reset G19
+0
+.latch G102 G19
+.reset G20
+0
+.latch G107 G20
+.reset G21
+0
+.latch G113 G21
+.reset G22
+0
+.latch G119 G22
+.reset G23
+0
+.latch G125 G23
+
+.table G12 G14 G99 G100
+.default 0
+1 1 1  1
+.table G108 G68 G69 G70 G101
+.default 0
+- - - 0  1
+- - 0 -  1
+- 0 - -  1
+0 - - -  1
+.table G13 G103
+.default 0
+0  1
+.table G74 G75 G104
+.default 0
+0 0  1
+.table G103 G104 G108 G105
+.default 0
+1 1 1  1
+.table G77 G78 G106
+.default 0
+- 0  1
+0 -  1
+.table G112 G108
+.default 0
+0  1
+.table G14 G71 G72 G73 G109
+.default 0
+- - - 0  1
+- - 0 -  1
+- 0 - -  1
+0 - - -  1
+.table G108 G109 G110
+.default 0
+1 1  1
+.table G10 G112 G111
+.default 0
+1 1  1
+.table G62 G63 G112
+.default 0
+0 0  1
+.table G21 G114
+.default 0
+0  1
+.table G114 G14 G115
+.default 0
+1 1  1
+.table G108 G79 G80 G81 G116
+.default 0
+- - - 0  1
+- - 0 -  1
+- 0 - -  1
+0 - - -  1
+.table G124 G120
+.default 0
+0  1
+.table G22 G121
+.default 0
+0  1
+.table G120 G121 G122
+.default 0
+1 1  1
+.table G124 G22 G123
+.default 0
+1 1  1
+.table I221 G124
+.default 0
+0  1
+.table G131 G126
+.default 0
+0  1
+.table G23 G127
+.default 0
+0  1
+.table G126 G127 G128
+.default 0
+1 1  1
+.table G131 G23 G129
+.default 0
+1 1  1
+.table I229 G130
+.default 0
+0  1
+.table I232 G131
+.default 0
+0  1
+.table G38 G40 G45 G46 G24
+.default 0
+- - - 1  1
+- - 1 -  1
+- 1 - -  1
+1 - - -  1
+.table G11 G12 G38 G25
+.default 0
+- - 1  1
+- 1 -  1
+1 - -  1
+.table G28 G50 G26
+.default 0
+1 1  1
+.table G28 G51 G27
+.default 0
+1 1  1
+.table G130 G28
+.default 0
+0  1
+.table G10 G13 G45 G31
+.default 0
+1 1 1  1
+.table G10 G11 G32
+.default 0
+1 1  1
+.table G38 G46 G33
+.default 0
+1 1  1
+.table G10 G11 G12 G35
+.default 0
+1 1 1  1
+.table G38 G45 G36
+.default 0
+1 1  1
+.table G45 G46 G37
+.default 0
+1 1  1
+.table G10 G38
+.default 0
+0  1
+.table G13 G40
+.default 0
+0  1
+.table G10 G11 G12 G41
+.default 0
+- - 0  1
+- 0 -  1
+0 - -  1
+.table G40 G41 G42
+.default 0
+1 1  1
+.table G24 G25 G28 G43
+.default 0
+- - 0  1
+- 0 -  1
+0 - -  1
+.table G12 G45
+.default 0
+0  1
+.table G11 G46
+.default 0
+0  1
+.table G40 G50 G47
+.default 0
+0 0  1
+.table G10 G45 G46 G47 G48
+.default 0
+1 1 1 1  1
+.table G50 G51 G52 G49
+.default 0
+1 1 1  1
+.table G14 G50
+.default 0
+0  1
+.table G23 G51
+.default 0
+0  1
+.table G10 G13 G45 G46 G52
+.default 0
+- - - 0  1
+- - 0 -  1
+- 0 - -  1
+0 - - -  1
+.table G26 G27 G53
+.default 0
+0 0  1
+.table G11 G54
+.default 0
+0  1
+.table G13 G55
+.default 0
+0  1
+.table G11 G59 G60 G61 G57
+.default 0
+1 1 1 1  1
+.table G64 G65 G58
+.default 0
+1 1  1
+.table G12 G59
+.default 0
+0  1
+.table G22 G60
+.default 0
+0  1
+.table G14 G55 G61
+.default 0
+0 0  1
+.table G11 G59 G60 G61 G62
+.default 0
+1 1 1 1  1
+.table G64 G65 G63
+.default 0
+1 1  1
+.table G15 G64
+.default 0
+0  1
+.table G22 G54 G59 G61 G65
+.default 0
+- - - 0  1
+- - 0 -  1
+- 0 - -  1
+0 - - -  1
+.table G11 G12 G13 G96 G68
+.default 0
+- - - 1  1
+- - 1 -  1
+- 1 - -  1
+1 - - -  1
+.table G103 G18 G69
+.default 0
+- 1  1
+1 -  1
+.table G103 G14 G70
+.default 0
+- 1  1
+1 -  1
+.table G12 G13 G82 G71
+.default 0
+- - 1  1
+- 1 -  1
+1 - -  1
+.table G20 G91 G72
+.default 0
+- 1  1
+1 -  1
+.table G103 G20 G73
+.default 0
+- 1  1
+1 -  1
+.table G12 G14 G19 G74
+.default 0
+1 1 1  1
+.table G14 G82 G91 G75
+.default 0
+1 1 1  1
+.table G10 G76
+.default 0
+0  1
+.table G103 G112 G19 G96 G77
+.default 0
+- - - 1  1
+- - 1 -  1
+- 1 - -  1
+1 - - -  1
+.table G108 G76 G78
+.default 0
+- 1  1
+1 -  1
+.table G103 G14 G79
+.default 0
+- 1  1
+1 -  1
+.table G11 G14 G80
+.default 0
+- 1  1
+1 -  1
+.table G12 G13 G81
+.default 0
+- 1  1
+1 -  1
+.table G11 G82
+.default 0
+0  1
+.table G11 G12 G13 G96 G83
+.default 0
+- - - 1  1
+- - 1 -  1
+- 1 - -  1
+1 - - -  1
+.table G14 G82 G91 G84
+.default 0
+- - 1  1
+- 1 -  1
+1 - -  1
+.table G17 G91 G96 G85
+.default 0
+- - 1  1
+- 1 -  1
+1 - -  1
+.table G16 G87
+.default 0
+0  1
+.table G14 G87 G88
+.default 0
+1 1  1
+.table G103 G96 G89
+.default 0
+1 1  1
+.table G103 G91 G90
+.default 0
+1 1  1
+.table G12 G91
+.default 0
+0  1
+.table G17 G93
+.default 0
+0  1
+.table G13 G93 G94
+.default 0
+1 1  1
+.table G13 G96 G95
+.default 0
+1 1  1
+.table G14 G96
+.default 0
+0  1
+.table G108 G83 G84 G85 G97
+.default 0
+- - - 0  1
+- - 0 -  1
+- 0 - -  1
+0 - - -  1
+.table G18 G99
+.default 0
+0  1
+.table G16 I155
+.default 0
+0  1
+.table G17 I158
+.default 0
+0  1
+.table G18 I210
+.default 0
+0  1
+.table G19 I213
+.default 0
+0  1
+.table G2 I221
+.default 0
+0  1
+.table G0 I229
+.default 0
+0  1
+.table G1 I232
+.default 0
+0  1
+.table G20 I235
+.default 0
+0  1
+.table G21 I238
+.default 0
+0  1
+.table I155 G66
+.default 0
+0  1
+.table I158 G67
+.default 0
+0  1
+.table I210 G117
+.default 0
+0  1
+.table I213 G118
+.default 0
+0  1
+.table I235 G132
+.default 0
+0  1
+.table I238 G133
+.default 0
+0  1
+.table G10 G130 G29
+.default 0
+0 0  1
+.table G130 G31 G32 G33 G30
+.default 0
+0 0 0 0  1
+.table G130 G35 G36 G37 G34
+.default 0
+0 0 0 0  1
+.table G42 G43 G39
+.default 0
+0 0  1
+.table G48 G49 G53 G44
+.default 0
+0 0 0  1
+.table G130 G57 G58 G56
+.default 0
+0 0 0  1
+.table G112 G88 G89 G90 G86
+.default 0
+0 0 0 0  1
+.table G94 G95 G97 G92
+.default 0
+0 0 0  1
+.table G100 G101 G98
+.default 0
+0 0  1
+.table G105 G106 G102
+.default 0
+0 0  1
+.table G110 G111 G107
+.default 0
+0 0  1
+.table G115 G116 G113
+.default 0
+0 0  1
+.table G122 G123 G130 G119
+.default 0
+0 0 0  1
+.table G128 G129 G130 G125
+.default 0
+0 0 0  1
+.end

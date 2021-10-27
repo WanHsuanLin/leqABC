@@ -1,0 +1,2213 @@
+.model benchmark/iccas/s1494/s1494.bench
+.spec benchmark/iccas/s1494/s1494a.blif
+.inputs CLR v6 v5 v4 v3 v2 v1 v0 v9 v8 v7
+.outputs v13_D_24 v13_D_23 v13_D_22 v13_D_21 v13_D_20 v13_D_19 v13_D_18 \
+ v13_D_17 v13_D_16 v13_D_15 v13_D_14 v13_D_13 v13_D_12 v13_D_11 v13_D_10 \
+ v13_D_9 v13_D_8 v13_D_7 v13_D_6 v12 v11 v10
+.default_input_arrival 0 0
+
+.reset IN-v12
+0
+.latch v13_D_5C IN-v12
+.reset IN-v11
+0
+.latch v13_D_4C IN-v11
+.reset IN-v10
+0
+.latch v13_D_3C IN-v10
+
+.table I71 I72 I73 Av13_D_0B
+.default 0
+- - 1  1
+- 1 -  1
+1 - -  1
+.table I123 I124 Av13_D_10B
+.default 0
+- 1  1
+1 -  1
+.table I140 I141 II142 Av13_D_11B
+.default 0
+- - 1  1
+- 1 -  1
+1 - -  1
+.table I48 I49 Av13_D_12B
+.default 0
+- 1  1
+1 -  1
+.table I27 I28 I29 Av13_D_13B
+.default 0
+- - 1  1
+- 1 -  1
+1 - -  1
+.table I78 I79 I80 Av13_D_14B
+.default 0
+- - 1  1
+- 1 -  1
+1 - -  1
+.table I548 v12E v7E Av13_D_15B
+.default 0
+1 1 1  1
+.table C200D IN-v10 v8 Av13_D_16B
+.default 0
+1 1 1  1
+.table I31 I32 Av13_D_17B
+.default 0
+- 1  1
+1 -  1
+.table C210D v12E v7E Av13_D_18B
+.default 0
+1 1 1  1
+.table I293 I294 Av13_D_19B
+.default 0
+- 1  1
+1 -  1
+.table I86 I87 I88 I89 Av13_D_1B
+.default 0
+- - - 1  1
+- - 1 -  1
+- 1 - -  1
+1 - - -  1
+.table C104D C138DE C220DE I329 Av13_D_20B
+.default 0
+1 1 1 1  1
+.table C213D v10E v12E v7E Av13_D_21B
+.default 0
+1 1 1 1  1
+.table I266 I267 Av13_D_22B
+.default 0
+- 1  1
+1 -  1
+.table C216D v7E v8E Av13_D_23B
+.default 0
+1 1 1  1
+.table I82 I83 I84 Av13_D_24B
+.default 0
+- - 1  1
+- 1 -  1
+1 - -  1
+.table I58 I59 I60 Av13_D_2B
+.default 0
+- - 1  1
+- 1 -  1
+1 - -  1
+.table I34 I35 I36 Av13_D_3B
+.default 0
+- - 1  1
+- 1 -  1
+1 - -  1
+.table I38 I39 I40 I41 Av13_D_4B
+.default 0
+- - - 1  1
+- - 1 -  1
+- 1 - -  1
+1 - - -  1
+.table I43 I44 I45 I46 Av13_D_5B
+.default 0
+- - - 1  1
+- - 1 -  1
+- 1 - -  1
+1 - - -  1
+.table I119 I120 Av13_D_6B
+.default 0
+- 1  1
+1 -  1
+.table I51 I52 Av13_D_7B
+.default 0
+- 1  1
+1 -  1
+.table I91 I92 I93 Av13_D_8B
+.default 0
+- - 1  1
+- 1 -  1
+1 - -  1
+.table C153D v12E Av13_D_9B
+.default 0
+1 1  1
+.table I429 I430 C100D
+.default 0
+- 1  1
+1 -  1
+.table I610 I65 I66 C102D
+.default 0
+- - 1  1
+- 1 -  1
+1 - -  1
+.table I435 I436 C103D
+.default 0
+- 1  1
+1 -  1
+.table v1 v6E C104D
+.default 0
+- 1  1
+1 -  1
+.table C104D C104DE
+.default 0
+0  1
+.table I449 I450 C105D
+.default 0
+- 1  1
+1 -  1
+.table I402 I403 C106D
+.default 0
+- 1  1
+1 -  1
+.table I386 I387 C107D
+.default 0
+- 1  1
+1 -  1
+.table IN-v12 v9 C108D
+.default 0
+- 1  1
+1 -  1
+.table C108D C108DE
+.default 0
+0  1
+.table I338 I339 C109D
+.default 0
+- 1  1
+1 -  1
+.table I229 I230 C110D
+.default 0
+- 1  1
+1 -  1
+.table C83DE v2 C111D
+.default 0
+- 1  1
+1 -  1
+.table I308 v9E C112D
+.default 0
+- 1  1
+1 -  1
+.table I148 I149 C113D
+.default 0
+- 1  1
+1 -  1
+.table I456 I457 C114D
+.default 0
+- 1  1
+1 -  1
+.table I299 I300 C115D
+.default 0
+- 1  1
+1 -  1
+.table I103 I104 I105 I106 C116D
+.default 0
+- - - 1  1
+- - 1 -  1
+- 1 - -  1
+1 - - -  1
+.table v2 v9E C117D
+.default 0
+- 1  1
+1 -  1
+.table C117D C117DE
+.default 0
+0  1
+.table v10E v2E C118D
+.default 0
+- 1  1
+1 -  1
+.table C118D C118DE
+.default 0
+0  1
+.table I349 I350 IN-v12 C119D
+.default 0
+- - 1  1
+- 1 -  1
+1 - -  1
+.table C144D I425 C120D
+.default 0
+- 1  1
+1 -  1
+.table I323 IN-v12 C122D
+.default 0
+- 1  1
+1 -  1
+.table C157DE I208 I209 I210 C123D
+.default 0
+- - - 1  1
+- - 1 -  1
+- 1 - -  1
+1 - - -  1
+.table IN-v10 IN-v11 C124D
+.default 0
+- 1  1
+1 -  1
+.table C124D C124DE
+.default 0
+0  1
+.table I335 I336 C125D
+.default 0
+- 1  1
+1 -  1
+.table I239 I240 C126D
+.default 0
+- 1  1
+1 -  1
+.table v4 v5E C127D
+.default 0
+- 1  1
+1 -  1
+.table I405 I406 C128D
+.default 0
+- 1  1
+1 -  1
+.table IN-v10 v9 C129D
+.default 0
+- 1  1
+1 -  1
+.table C129D C129DE
+.default 0
+0  1
+.table I371 I372 C130D
+.default 0
+- 1  1
+1 -  1
+.table IN-v10 v8E C131D
+.default 0
+- 1  1
+1 -  1
+.table C131D C131DE
+.default 0
+0  1
+.table I242 I243 C132D
+.default 0
+- 1  1
+1 -  1
+.table C49DE I278 C133D
+.default 0
+- 1  1
+1 -  1
+.table I163 I164 C134D
+.default 0
+- 1  1
+1 -  1
+.table I100 I101 C135D
+.default 0
+- 1  1
+1 -  1
+.table C117DE I489 C137D
+.default 0
+- 1  1
+1 -  1
+.table v11E v12E C138D
+.default 0
+- 1  1
+1 -  1
+.table C138D C138DE
+.default 0
+0  1
+.table I332 I333 C139D
+.default 0
+- 1  1
+1 -  1
+.table I226 I227 C140D
+.default 0
+- 1  1
+1 -  1
+.table IN-v12 v10E C141D
+.default 0
+1 -  1
+- 1  1
+.table C141D C141DE
+.default 0
+0  1
+.table IN-v12 v0 C142D
+.default 0
+1 -  1
+- 1  1
+.table C49DE I291 v9 C143D
+.default 0
+- - 1  1
+- 1 -  1
+1 - -  1
+.table IN-v12 v11E C144D
+.default 0
+1 -  1
+- 1  1
+.table C144D C144DE
+.default 0
+0  1
+.table I528 IN-v12 C145D
+.default 0
+- 1  1
+1 -  1
+.table I398 I399 C146D
+.default 0
+- 1  1
+1 -  1
+.table I176 I177 I491 C147D
+.default 0
+- - 1  1
+- 1 -  1
+1 - -  1
+.table C90DE I409 C148D
+.default 0
+- 1  1
+1 -  1
+.table C30DE I352 C150D
+.default 0
+- 1  1
+1 -  1
+.table I554 I555 C151D
+.default 0
+- 1  1
+1 -  1
+.table I205 I206 C152D
+.default 0
+- 1  1
+1 -  1
+.table I133 I134 C153D
+.default 0
+- 1  1
+1 -  1
+.table v2 v7 C155D
+.default 0
+- 1  1
+1 -  1
+.table I441 I442 C156D
+.default 0
+- 1  1
+1 -  1
+.table v10E v12E C157D
+.default 0
+- 1  1
+1 -  1
+.table C157D C157DE
+.default 0
+0  1
+.table I395 I396 C158D
+.default 0
+- 1  1
+1 -  1
+.table I546 I547 C159D
+.default 0
+- 1  1
+1 -  1
+.table I341 I342 C160D
+.default 0
+- 1  1
+1 -  1
+.table I314 I315 C161D
+.default 0
+- 1  1
+1 -  1
+.table I196 I197 C162D
+.default 0
+- 1  1
+1 -  1
+.table C129DE I510 C163D
+.default 0
+- 1  1
+1 -  1
+.table I222 I223 I224 C164D
+.default 0
+- - 1  1
+- 1 -  1
+1 - -  1
+.table IN-v11 v8E C165D
+.default 0
+- 1  1
+1 -  1
+.table C165D C165DE
+.default 0
+0  1
+.table v3E v6E C166D
+.default 0
+- 1  1
+1 -  1
+.table C166D C166DE
+.default 0
+0  1
+.table I380 I381 C167D
+.default 0
+- 1  1
+1 -  1
+.table C159D v9 C168D
+.default 0
+- 1  1
+1 -  1
+.table I232 I233 I234 IN-v12 C169D
+.default 0
+- - - 1  1
+- - 1 -  1
+- 1 - -  1
+1 - - -  1
+.table C124DE v9E C170D
+.default 0
+- 1  1
+1 -  1
+.table I478 I479 C172D
+.default 0
+- 1  1
+1 -  1
+.table I302 I303 C173D
+.default 0
+- 1  1
+1 -  1
+.table I179 I180 C174D
+.default 0
+- 1  1
+1 -  1
+.table I325 I326 C175D
+.default 0
+- 1  1
+1 -  1
+.table I188 I189 C176D
+.default 0
+- 1  1
+1 -  1
+.table I75 I76 C177D
+.default 0
+- 1  1
+1 -  1
+.table I559 I560 C178D
+.default 0
+- 1  1
+1 -  1
+.table I518 IN-v10 C179D
+.default 0
+- 1  1
+1 -  1
+.table C194DE v11E C180D
+.default 0
+- 1  1
+1 -  1
+.table C180D C180DE
+.default 0
+0  1
+.table I185 I186 C181D
+.default 0
+- 1  1
+1 -  1
+.table I305 I306 C183D
+.default 0
+- 1  1
+1 -  1
+.table I182 I183 C184D
+.default 0
+- 1  1
+1 -  1
+.table I492 II491 C185D
+.default 0
+- 1  1
+1 -  1
+.table C49DE I245 C186D
+.default 0
+- 1  1
+1 -  1
+.table I108 I109 C187D
+.default 0
+- 1  1
+1 -  1
+.table I54 I55 C188D
+.default 0
+- 1  1
+1 -  1
+.table I362 I363 C189D
+.default 0
+- 1  1
+1 -  1
+.table I215 I216 C190D
+.default 0
+- 1  1
+1 -  1
+.table v10E v9 C191D
+.default 0
+- 1  1
+1 -  1
+.table C191D C191DE
+.default 0
+0  1
+.table I354 v8 C192D
+.default 0
+- 1  1
+1 -  1
+.table v11E v2 C193D
+.default 0
+- 1  1
+1 -  1
+.table v0 v10E C194D
+.default 0
+- 1  1
+1 -  1
+.table C194D C194DE
+.default 0
+0  1
+.table C180DE v9 C195D
+.default 0
+- 1  1
+1 -  1
+.table C195D C195DE
+.default 0
+0  1
+.table I170 I171 I497 IN-v12 C196D
+.default 0
+- - - 1  1
+- - 1 -  1
+- 1 - -  1
+1 - - -  1
+.table I191 I192 C199D
+.default 0
+- 1  1
+1 -  1
+.table I513 I514 C200D
+.default 0
+- 1  1
+1 -  1
+.table I503 v12E C201D
+.default 0
+- 1  1
+1 -  1
+.table I272 I273 C202D
+.default 0
+- 1  1
+1 -  1
+.table C70DE I508 C203D
+.default 0
+- 1  1
+1 -  1
+.table I287 I288 C205D
+.default 0
+- 1  1
+1 -  1
+.table I166 I167 C206D
+.default 0
+- 1  1
+1 -  1
+.table I68 I69 C207D
+.default 0
+- 1  1
+1 -  1
+.table v4 v5 C208D
+.default 0
+- 1  1
+1 -  1
+.table C208D C208DE
+.default 0
+0  1
+.table I498 II497 C209D
+.default 0
+- 1  1
+1 -  1
+.table I296 I297 C210D
+.default 0
+- 1  1
+1 -  1
+.table I485 I486 C211D
+.default 0
+- 1  1
+1 -  1
+.table I482 I483 C213D
+.default 0
+- 1  1
+1 -  1
+.table I460 I461 C214D
+.default 0
+- 1  1
+1 -  1
+.table I438 I439 C215D
+.default 0
+- 1  1
+1 -  1
+.table I256 I257 C216D
+.default 0
+- 1  1
+1 -  1
+.table I419 I420 C217D
+.default 0
+- 1  1
+1 -  1
+.table IN-v10 v7E C218D
+.default 0
+- 1  1
+1 -  1
+.table C218D C218DE
+.default 0
+0  1
+.table I377 I378 C219D
+.default 0
+- 1  1
+1 -  1
+.table v8E v9E C220D
+.default 0
+- 1  1
+1 -  1
+.table C220D C220DE
+.default 0
+0  1
+.table I389 I390 C221D
+.default 0
+- 1  1
+1 -  1
+.table C138DE I417 C222D
+.default 0
+- 1  1
+1 -  1
+.table I284 I285 C223D
+.default 0
+- 1  1
+1 -  1
+.table I145 I146 C224D
+.default 0
+- 1  1
+1 -  1
+.table I236 I237 C225D
+.default 0
+- 1  1
+1 -  1
+.table I414 I415 C26D
+.default 0
+- 1  1
+1 -  1
+.table I500 I501 C27D
+.default 0
+- 1  1
+1 -  1
+.table I275 I276 C28D
+.default 0
+- 1  1
+1 -  1
+.table C138DE I466 C29D
+.default 0
+- 1  1
+1 -  1
+.table v10E v11E C30D
+.default 0
+- 1  1
+1 -  1
+.table C30D C30DE
+.default 0
+0  1
+.table I369 II368 C31D
+.default 0
+- 1  1
+1 -  1
+.table IN-v10 v6E C33D
+.default 0
+- 1  1
+1 -  1
+.table I320 I321 C34D
+.default 0
+- 1  1
+1 -  1
+.table I202 I203 C35D
+.default 0
+- 1  1
+1 -  1
+.table C165DE v10E C36D
+.default 0
+- 1  1
+1 -  1
+.table I280 I281 I282 C37D
+.default 0
+- - 1  1
+- 1 -  1
+1 - -  1
+.table I116 I117 C38D
+.default 0
+- 1  1
+1 -  1
+.table I423 v9 C39D
+.default 0
+- 1  1
+1 -  1
+.table I253 II254 C40D
+.default 0
+- 1  1
+1 -  1
+.table I470 I471 C41D
+.default 0
+- 1  1
+1 -  1
+.table I432 I433 C42D
+.default 0
+- 1  1
+1 -  1
+.table I262 I263 C43D
+.default 0
+- 1  1
+1 -  1
+.table C124DE I473 C44D
+.default 0
+- 1  1
+1 -  1
+.table C90DE v11E C45D
+.default 0
+- 1  1
+1 -  1
+.table I247 I248 C46D
+.default 0
+- 1  1
+1 -  1
+.table I533 I534 C47D
+.default 0
+- 1  1
+1 -  1
+.table I136 I137 C48D
+.default 0
+- 1  1
+1 -  1
+.table C141D IN-v11 C49D
+.default 0
+- 1  1
+1 -  1
+.table C49D C49DE
+.default 0
+0  1
+.table I520 IN-v11 C50D
+.default 0
+- 1  1
+1 -  1
+.table I356 I357 C51D
+.default 0
+- 1  1
+1 -  1
+.table I218 I219 I220 C52D
+.default 0
+- - 1  1
+- 1 -  1
+1 - -  1
+.table I151 I152 I153 I154 C53D
+.default 0
+- - - 1  1
+- - 1 -  1
+- 1 - -  1
+1 - - -  1
+.table C90DE I412 C54D
+.default 0
+- 1  1
+1 -  1
+.table I475 I476 C55D
+.default 0
+- 1  1
+1 -  1
+.table I516 v9 C56D
+.default 0
+- 1  1
+1 -  1
+.table I365 I366 C57D
+.default 0
+- 1  1
+1 -  1
+.table I212 I213 C58D
+.default 0
+- 1  1
+1 -  1
+.table I537 I538 C59D
+.default 0
+- 1  1
+1 -  1
+.table I494 I495 C60D
+.default 0
+- 1  1
+1 -  1
+.table I317 I318 v12E C63D
+.default 0
+- - 1  1
+- 1 -  1
+1 - -  1
+.table I199 I200 C65D
+.default 0
+- 1  1
+1 -  1
+.table I160 I161 C67D
+.default 0
+- 1  1
+1 -  1
+.table I328 II329 C69D
+.default 0
+- 1  1
+1 -  1
+.table v0 v11E C70D
+.default 0
+- 1  1
+1 -  1
+.table C70D C70DE
+.default 0
+0  1
+.table I383 I384 C71D
+.default 0
+- 1  1
+1 -  1
+.table I310 I311 C72D
+.default 0
+- 1  1
+1 -  1
+.table I269 I270 C73D
+.default 0
+- 1  1
+1 -  1
+.table I129 I130 I131 I542 C74D
+.default 0
+- - - 1  1
+- - 1 -  1
+- 1 - -  1
+1 - - -  1
+.table I359 I360 C75D
+.default 0
+- 1  1
+1 -  1
+.table C131DE I427 C76D
+.default 0
+- 1  1
+1 -  1
+.table C104D v0E C77D
+.default 0
+- 1  1
+1 -  1
+.table I452 I453 C78D
+.default 0
+- 1  1
+1 -  1
+.table C131DE IN-v11 C79D
+.default 0
+- 1  1
+1 -  1
+.table I250 I251 C80D
+.default 0
+- 1  1
+1 -  1
+.table IN-v12 v2E C81D
+.default 0
+- 1  1
+1 -  1
+.table C81D C81DE
+.default 0
+0  1
+.table I392 I393 C82D
+.default 0
+- 1  1
+1 -  1
+.table v4E v5E C83D
+.default 0
+- 1  1
+1 -  1
+.table C83D C83DE
+.default 0
+0  1
+.table C138DE I344 C84D
+.default 0
+- 1  1
+1 -  1
+.table I156 I157 I158 C85D
+.default 0
+- - 1  1
+- 1 -  1
+1 - -  1
+.table I524 v9 C86D
+.default 0
+- 1  1
+1 -  1
+.table I374 I375 C87D
+.default 0
+- 1  1
+1 -  1
+.table I259 I260 C88D
+.default 0
+- 1  1
+1 -  1
+.table I95 I96 I97 I98 C89D
+.default 0
+- - - 1  1
+- - 1 -  1
+- 1 - -  1
+1 - - -  1
+.table v12E v9 C90D
+.default 0
+- 1  1
+1 -  1
+.table C90D C90DE
+.default 0
+0  1
+.table I346 I347 C91D
+.default 0
+- 1  1
+1 -  1
+.table I505 I506 C92D
+.default 0
+- 1  1
+1 -  1
+.table C191DE I468 C93D
+.default 0
+- 1  1
+1 -  1
+.table I446 I447 C95D
+.default 0
+- 1  1
+1 -  1
+.table I463 I464 C96D
+.default 0
+- 1  1
+1 -  1
+.table I194 v11E C97D
+.default 0
+- 1  1
+1 -  1
+.table C144D I444 C98D
+.default 0
+- 1  1
+1 -  1
+.table I111 I112 I113 I114 C99D
+.default 0
+- - - 1  1
+- - 1 -  1
+- 1 - -  1
+1 - - -  1
+.table C134D v9E I100
+.default 0
+1 1  1
+.table C127D C128D v12E I101
+.default 0
+1 1 1  1
+.table C115D IN-v10 I103
+.default 0
+1 1  1
+.table C107D IN-v12 v3 I104
+.default 0
+1 1 1  1
+.table C113D v8 I105
+.default 0
+1 1  1
+.table C114D v8E I106
+.default 0
+1 1  1
+.table C181D C83DE I108
+.default 0
+1 1  1
+.table C179D IN-v11 v2 v8 I109
+.default 0
+1 1 1 1  1
+.table C98D v10E I111
+.default 0
+1 1  1
+.table IN-v12 v11E I112
+.default 0
+1 1  1
+.table C93D v12E v2E I113
+.default 0
+1 1 1  1
+.table C97D v9 I114
+.default 0
+1 1  1
+.table C37D v9 I116
+.default 0
+1 1  1
+.table C35D v8E I117
+.default 0
+1 1  1
+.table C126D v8 I119
+.default 0
+1 1  1
+.table C123D v7E I120
+.default 0
+1 1  1
+.table C162D v8 I123
+.default 0
+1 1  1
+.table C164D v12E I124
+.default 0
+1 1  1
+.table C58D v2 I126
+.default 0
+1 1  1
+.table C73D v10E I127
+.default 0
+1 1  1
+.table C69D v8 I128
+.default 0
+1 1  1
+.table C72D v8E I129
+.default 0
+1 1  1
+.table C60D C83D I130
+.default 0
+1 1  1
+.table C157DE v11E v9 I131
+.default 0
+1 1 1  1
+.table C152D v9 I133
+.default 0
+1 1  1
+.table C151D IN-v10 v7E I134
+.default 0
+1 1 1  1
+.table C144DE C47D I136
+.default 0
+1 1  1
+.table C46D v8 I137
+.default 0
+1 1  1
+.table C144DE v10E v8E I140
+.default 0
+1 1 1  1
+.table C170D v8 I141
+.default 0
+1 1  1
+.table v11E v7E v9 I142
+.default 0
+1 1 1  1
+.table C166DE C220DE C49DE I145
+.default 0
+1 1 1  1
+.table C223D v8E v9E I146
+.default 0
+1 1 1  1
+.table C144DE v10E v9 I148
+.default 0
+1 1 1  1
+.table C112D IN-v10 I149
+.default 0
+1 1  1
+.table C138DE v9 I151
+.default 0
+1 1  1
+.table C129DE v12E v8 I152
+.default 0
+1 1 1  1
+.table C52D v8E I153
+.default 0
+1 1  1
+.table C40D v2 I154
+.default 0
+1 1  1
+.table C80D v9 I156
+.default 0
+1 1  1
+.table C82D v9E I157
+.default 0
+1 1  1
+.table C84D v10E I158
+.default 0
+1 1  1
+.table C65D v8 I160
+.default 0
+1 1  1
+.table C144DE C191D I161
+.default 0
+1 1  1
+.table C118DE v11E v12E I163
+.default 0
+1 1 1  1
+.table C133D v8E I164
+.default 0
+1 1  1
+.table C205D IN-v10 I166
+.default 0
+1 1  1
+.table C129D IN-v11 v8 I167
+.default 0
+1 1 1  1
+.table C195D v8E I169
+.default 0
+1 1  1
+.table IN-v10 v11E I170
+.default 0
+1 1  1
+.table C193D v8 I171
+.default 0
+1 1  1
+.table C146D v11E I173
+.default 0
+1 1  1
+.table C143D v8E I174
+.default 0
+1 1  1
+.table C144D v9 I175
+.default 0
+1 1  1
+.table C145D v10E I176
+.default 0
+1 1  1
+.table C127D C137D I177
+.default 0
+1 1  1
+.table C144DE IN-v10 v9 I179
+.default 0
+1 1 1  1
+.table C173D v9E I180
+.default 0
+1 1  1
+.table C144DE v10E v8E I182
+.default 0
+1 1 1  1
+.table C183D v8 I183
+.default 0
+1 1  1
+.table C195DE v8E I185
+.default 0
+1 1  1
+.table C117DE IN-v11 v8 I186
+.default 0
+1 1 1  1
+.table C175D IN-v11 I188
+.default 0
+1 1  1
+.table v12E v7 I189
+.default 0
+1 1  1
+.table C117DE IN-v11 v8 I191
+.default 0
+1 1 1  1
+.table C44D v8E v9E I192
+.default 0
+1 1 1  1
+.table C77D IN-v12 v3 I194
+.default 0
+1 1 1  1
+.table C161D IN-v11 I196
+.default 0
+1 1  1
+.table C158D v11E v7 I197
+.default 0
+1 1 1  1
+.table C63D v9E I199
+.default 0
+1 1  1
+.table C124D v12E I200
+.default 0
+1 1  1
+.table C144DE C194DE C83DE v9E I202
+.default 0
+1 1 1 1  1
+.table C34D v9 I203
+.default 0
+1 1  1
+.table C30DE v8E I205
+.default 0
+1 1  1
+.table C150D v7 I206
+.default 0
+1 1  1
+.table C122D v11E I208
+.default 0
+1 1  1
+.table C119D v8 I209
+.default 0
+1 1  1
+.table C120D v9 I210
+.default 0
+1 1  1
+.table C49DE v9E I212
+.default 0
+1 1  1
+.table C57D v10E I213
+.default 0
+1 1  1
+.table C144DE v1 v9 I215
+.default 0
+1 1 1  1
+.table C189D v9E I216
+.default 0
+1 1  1
+.table C44D C83DE v12E I218
+.default 0
+1 1 1  1
+.table C49D v9 I219
+.default 0
+1 1  1
+.table C51D IN-v12 I220
+.default 0
+1 1  1
+.table C156D C83DE I222
+.default 0
+1 1  1
+.table C160D v7E v9E I223
+.default 0
+1 1 1  1
+.table C163D IN-v11 v8E I224
+.default 0
+1 1 1  1
+.table C144DE v10E v8E I226
+.default 0
+1 1 1  1
+.table C139D IN-v10 v8 I227
+.default 0
+1 1 1  1
+.table C144DE IN-v10 v9 I229
+.default 0
+1 1 1  1
+.table C109D v10E I230
+.default 0
+1 1  1
+.table C165D C83DE I232
+.default 0
+1 1  1
+.table C168D v8E I233
+.default 0
+1 1  1
+.table C167D v8 I234
+.default 0
+1 1  1
+.table C219D v2E v8 I236
+.default 0
+1 1 1  1
+.table C221D v12E v7 I237
+.default 0
+1 1 1  1
+.table C124DE IN-v12 v9 I239
+.default 0
+1 1 1  1
+.table C125D v9E I240
+.default 0
+1 1  1
+.table C130D C165DE I242
+.default 0
+1 1  1
+.table C131D C144DE v9 I243
+.default 0
+1 1 1  1
+.table C185D v8E I245
+.default 0
+1 1  1
+.table C144DE IN-v10 I247
+.default 0
+1 1  1
+.table C45D v10E I248
+.default 0
+1 1  1
+.table C138DE C77D v3 I250
+.default 0
+1 1 1  1
+.table v11E v12E v6E I251
+.default 0
+1 1 1  1
+.table C138DE v10E v1E I253
+.default 0
+1 1 1  1
+.table v1 v6 v7E v8E I254
+.default 0
+1 1 1 1  1
+.table C138DE IN-v10 v9 I256
+.default 0
+1 1 1  1
+.table C215D v9E I257
+.default 0
+1 1  1
+.table C129DE C83DE v12E I259
+.default 0
+1 1 1  1
+.table C78D v3E I260
+.default 0
+1 1  1
+.table C42D v8 I262
+.default 0
+1 1  1
+.table C41D IN-v11 v7E I263
+.default 0
+1 1 1  1
+.table C220DE C49DE v7 I266
+.default 0
+1 1 1  1
+.table C214D v10E v7E I267
+.default 0
+1 1 1  1
+.table C108DE C83DE v11E I269
+.default 0
+1 1 1  1
+.table C184D v7 I27
+.default 0
+1 1  1
+.table C55D v1E I270
+.default 0
+1 1  1
+.table C144DE v10E I272
+.default 0
+1 1  1
+.table C201D v8 I273
+.default 0
+1 1  1
+.table C90DE v7 v8 I275
+.default 0
+1 1 1  1
+.table C27D v12E v7E v9 I276
+.default 0
+1 1 1 1  1
+.table C138DE v10E I278
+.default 0
+1 1  1
+.table C188D v7E I28
+.default 0
+1 1  1
+.table C26D v1E I280
+.default 0
+1 1  1
+.table C29D v3E I281
+.default 0
+1 1  1
+.table C36D IN-v12 I282
+.default 0
+1 1  1
+.table C157DE v11E I284
+.default 0
+1 1  1
+.table C222D v10E I285
+.default 0
+1 1  1
+.table IN-v11 v9 I287
+.default 0
+1 1  1
+.table C203D v7E I288
+.default 0
+1 1  1
+.table C190D IN-v10 I29
+.default 0
+1 1  1
+.table C142D IN-v11 I291
+.default 0
+1 1  1
+.table C118DE C138DE I368 I293
+.default 0
+1 1 1  1
+.table C211D v11E v3 v7E I294
+.default 0
+1 1 1 1  1
+.table C124DE C83DE v8E v9E I296
+.default 0
+1 1 1 1  1
+.table C208D C209D IN-v11 I297
+.default 0
+1 1 1  1
+.table C108DE v11E I299
+.default 0
+1 1  1
+.table C105D v0E I300
+.default 0
+1 1  1
+.table C157DE v11E I302
+.default 0
+1 1  1
+.table C172D v12E I303
+.default 0
+1 1  1
+.table C49DE v9 I305
+.default 0
+1 1  1
+.table C129DE C138D I306
+.default 0
+1 1  1
+.table C111D C144DE I308
+.default 0
+1 1  1
+.table C108DE C83DE I642 I31
+.default 0
+1 1 1  1
+.table C124DE v12E v6E v9 I310
+.default 0
+1 1 1 1  1
+.table C71D v9E I311
+.default 0
+1 1  1
+.table C90DE IN-v10 I314
+.default 0
+1 1  1
+.table C129D C155D v12E I315
+.default 0
+1 1 1  1
+.table IN-v10 v11E I317
+.default 0
+1 1  1
+.table C118D IN-v11 I318
+.default 0
+1 1  1
+.table C207D v2 I32
+.default 0
+1 1  1
+.table C141D IN-v11 I320
+.default 0
+1 1  1
+.table C33D v11E v12E I321
+.default 0
+1 1 1  1
+.table C127D v10E I323
+.default 0
+1 1  1
+.table C90DE IN-v10 I325
+.default 0
+1 1  1
+.table C129D C81DE I326
+.default 0
+1 1  1
+.table C124DE v12E v3 I328
+.default 0
+1 1 1  1
+.table IN-v10 v3 v7E I329
+.default 0
+1 1 1  1
+.table C138D v9E I332
+.default 0
+1 1  1
+.table v11E v12E I333
+.default 0
+1 1  1
+.table C218DE v12E I335
+.default 0
+1 1  1
+.table C124D IN-v12 I336
+.default 0
+1 1  1
+.table C108D C165DE I338
+.default 0
+1 1  1
+.table C144DE v8E I339
+.default 0
+1 1  1
+.table C165DE C91D I34
+.default 0
+1 1  1
+.table C118DE v11E I341
+.default 0
+1 1  1
+.table C159D v8E I342
+.default 0
+1 1  1
+.table C83D v12E I344
+.default 0
+1 1  1
+.table C191DE IN-v12 I346
+.default 0
+1 1  1
+.table C90D v10E I347
+.default 0
+1 1  1
+.table C118D v11E I349
+.default 0
+1 1  1
+.table C79D v12E v7 v9 I35
+.default 0
+1 1 1 1  1
+.table C117D IN-v11 I350
+.default 0
+1 1  1
+.table C124D v8 I352
+.default 0
+1 1  1
+.table C191D IN-v11 I354
+.default 0
+1 1  1
+.table C50D v10E I356
+.default 0
+1 1  1
+.table IN-v10 v11E I357
+.default 0
+1 1  1
+.table C165DE v12E I359
+.default 0
+1 1  1
+.table C89D v7E I36
+.default 0
+1 1  1
+.table C59D v3E I360
+.default 0
+1 1  1
+.table C138DE v8 I362
+.default 0
+1 1  1
+.table C178D v1E I363
+.default 0
+1 1  1
+.table C56D IN-v11 v8 I365
+.default 0
+1 1 1  1
+.table v11E v12E v8E v9 I366
+.default 0
+1 1 1 1  1
+.table v7 v8 v9E I368
+.default 0
+1 1 1  1
+.table C124DE v9 I369
+.default 0
+1 1  1
+.table C90DE v10E I371
+.default 0
+1 1  1
+.table C129D v12E I372
+.default 0
+1 1  1
+.table C30DE v9E I374
+.default 0
+1 1  1
+.table C86D v10E I375
+.default 0
+1 1  1
+.table C90DE IN-v10 v7 I377
+.default 0
+1 1 1  1
+.table C218D v12E v5E v9 I378
+.default 0
+1 1 1 1  1
+.table C102D v7E I38
+.default 0
+1 1  1
+.table IN-v11 v2 I380
+.default 0
+1 1  1
+.table C166D v11E I381
+.default 0
+1 1  1
+.table C141DE C70D I383
+.default 0
+1 1  1
+.table C138DE v10E I384
+.default 0
+1 1  1
+.table C104D C30DE v0 v8 I386
+.default 0
+1 1 1 1  1
+.table C124DE v8E v9E I387
+.default 0
+1 1 1  1
+.table IN-v10 v8 v9 I389
+.default 0
+1 1 1  1
+.table C103D v10E I39
+.default 0
+1 1  1
+.table C220D v10E I390
+.default 0
+1 1  1
+.table C81D v11E I392
+.default 0
+1 1  1
+.table v10E v12E I393
+.default 0
+1 1  1
+.table C157D v9E I395
+.default 0
+1 1  1
+.table v10E v12E I396
+.default 0
+1 1  1
+.table C118DE v12E I398
+.default 0
+1 1  1
+.table C141D v8 I399
+.default 0
+1 1  1
+.table C92D v2 I40
+.default 0
+1 1  1
+.table C30DE v8 v9E I402
+.default 0
+1 1 1  1
+.table C124DE I254 v12E v9 I403
+.default 0
+1 1 1 1  1
+.table C194DE v8E v9E I405
+.default 0
+1 1 1  1
+.table C117DE IN-v11 v8 I406
+.default 0
+1 1 1  1
+.table v11E v9 I409
+.default 0
+1 1  1
+.table C96D v12E v7 I41
+.default 0
+1 1 1  1
+.table v10E v12E v3 I412
+.default 0
+1 1 1  1
+.table C138DE v6 I414
+.default 0
+1 1  1
+.table v11E v12E v8E I415
+.default 0
+1 1 1  1
+.table v11E v12E v5E I417
+.default 0
+1 1 1  1
+.table C30DE v5E v7E v8E I419
+.default 0
+1 1 1 1  1
+.table C131DE v2E v7 I420
+.default 0
+1 1 1  1
+.table C157DE v3E I423
+.default 0
+1 1  1
+.table v10E v8E I425
+.default 0
+1 1  1
+.table IN-v10 v8E v9 I427
+.default 0
+1 1 1  1
+.table C30DE v9E I429
+.default 0
+1 1  1
+.table C108DE IN-v10 v8 I43
+.default 0
+1 1 1  1
+.table v10E v1E v9 I430
+.default 0
+1 1 1  1
+.table C90DE v7 I432
+.default 0
+1 1  1
+.table C144DE IN-v10 I433
+.default 0
+1 1  1
+.table C165DE IN-v12 I435
+.default 0
+1 1  1
+.table C144DE v8E v9 I436
+.default 0
+1 1 1  1
+.table C144DE IN-v10 v0 I438
+.default 0
+1 1 1  1
+.table C124DE IN-v12 v6 I439
+.default 0
+1 1 1  1
+.table C106D v2E I44
+.default 0
+1 1  1
+.table C220DE IN-v11 I441
+.default 0
+1 1  1
+.table v7E v8E v9E I442
+.default 0
+1 1 1  1
+.table v3E v9E I444
+.default 0
+1 1  1
+.table C90DE v11E I446
+.default 0
+1 1  1
+.table v10E v12E v8E v9 I447
+.default 0
+1 1 1 1  1
+.table C108DE C83DE I449
+.default 0
+1 1  1
+.table C116D v7E I45
+.default 0
+1 1  1
+.table C104DE C138DE v3 v8 I450
+.default 0
+1 1 1 1  1
+.table C220DE v12E I452
+.default 0
+1 1  1
+.table IN-v12 v10E v8E I453
+.default 0
+1 1 1  1
+.table C30DE v9 I456
+.default 0
+1 1  1
+.table C124DE C90DE v6 I457
+.default 0
+1 1 1  1
+.table C110D v7 I46
+.default 0
+1 1  1
+.table C165DE v12E v2E I460
+.default 0
+1 1 1  1
+.table IN-v12 v8E v9 I461
+.default 0
+1 1 1  1
+.table C165DE C191DE I463
+.default 0
+1 1  1
+.table IN-v11 v10E v8E I464
+.default 0
+1 1 1  1
+.table v11E v12E v8E I466
+.default 0
+1 1 1  1
+.table C83DE v9 I468
+.default 0
+1 1  1
+.table C83DE v12E v8 I470
+.default 0
+1 1 1  1
+.table IN-v12 v1 v10E I471
+.default 0
+1 1 1  1
+.table C30DE v0E I473
+.default 0
+1 1  1
+.table C138DE v2E v8 I475
+.default 0
+1 1 1  1
+.table v11E v12E v8E v9 I476
+.default 0
+1 1 1 1  1
+.table C83DE v10E I478
+.default 0
+1 1  1
+.table IN-v11 v0 I479
+.default 0
+1 1  1
+.table C177D v8E I48
+.default 0
+1 1  1
+.table C220DE v2 I482
+.default 0
+1 1  1
+.table C83DE v11E v8E v9E I483
+.default 0
+1 1 1 1  1
+.table C141DE C220DE v6 I485
+.default 0
+1 1 1  1
+.table C129DE IN-v12 v6E v8E I486
+.default 0
+1 1 1 1  1
+.table IN-v11 v8E I489
+.default 0
+1 1  1
+.table C176D v8 I49
+.default 0
+1 1  1
+.table I173 I174 I175 I491
+.default 0
+- - 1  1
+- 1 -  1
+1 - -  1
+.table IN-v10 v11E I492
+.default 0
+1 1  1
+.table C108DE IN-v10 v8E I494
+.default 0
+1 1 1  1
+.table C131DE IN-v11 v9 I495
+.default 0
+1 1 1  1
+.table C208DE C83DE I169 I497
+.default 0
+- - 1  1
+- 1 -  1
+1 - -  1
+.table C117DE v8 I498
+.default 0
+1 1  1
+.table C83DE IN-v11 v8 I500
+.default 0
+1 1 1  1
+.table v11E v8E I501
+.default 0
+1 1  1
+.table C30DE v9E I503
+.default 0
+1 1  1
+.table C138DE C191DE v7 v8 I505
+.default 0
+1 1 1 1  1
+.table v10E v12E v7E v9 I506
+.default 0
+1 1 1 1  1
+.table v11E v9E I508
+.default 0
+1 1  1
+.table C132D v7 I51
+.default 0
+1 1  1
+.table IN-v10 v9 I510
+.default 0
+1 1  1
+.table C166DE I142 v12E I513
+.default 0
+1 1 1  1
+.table C138DE v2 v7 v9E I514
+.default 0
+1 1 1 1  1
+.table IN-v12 v1 I516
+.default 0
+1 1  1
+.table v10E v9 I518
+.default 0
+1 1  1
+.table C135D v7E I52
+.default 0
+1 1  1
+.table v3E v6E I520
+.default 0
+1 1  1
+.table v11E v6 I524
+.default 0
+1 1  1
+.table IN-v11 v9E I528
+.default 0
+1 1  1
+.table IN-v10 v9 I533
+.default 0
+1 1  1
+.table v10E v8E I534
+.default 0
+1 1  1
+.table IN-v12 v6E v7E v8E I537
+.default 0
+1 1 1 1  1
+.table v12E v8 I538
+.default 0
+1 1  1
+.table C186D v9E I54
+.default 0
+1 1  1
+.table I126 I127 I128 I542
+.default 0
+- - 1  1
+- 1 -  1
+1 - -  1
+.table IN-v11 v0 I546
+.default 0
+1 1  1
+.table IN-v10 v11E I547
+.default 0
+1 1  1
+.table C199D v4 v5E I548
+.default 0
+1 1 1  1
+.table C187D v12E I55
+.default 0
+1 1  1
+.table v2E v8 v9E I554
+.default 0
+1 1 1  1
+.table IN-v11 v0 v8E I555
+.default 0
+1 1 1  1
+.table IN-v11 v8 I559
+.default 0
+1 1  1
+.table v12E v7E I560
+.default 0
+1 1  1
+.table C129DE C75D I58
+.default 0
+1 1  1
+.table C67D v7 I59
+.default 0
+1 1  1
+.table C74D v7E I60
+.default 0
+1 1  1
+.table I62 I63 I64 I610
+.default 0
+- - 1  1
+- 1 -  1
+1 - -  1
+.table C95D v6E I62
+.default 0
+1 1  1
+.table C99D v8 I63
+.default 0
+1 1  1
+.table C157DE v11E I64
+.default 0
+1 1  1
+.table C124DE v7E v8E I642
+.default 0
+1 1 1  1
+.table C185D v9 I65
+.default 0
+1 1  1
+.table Av13_D_24B I650
+.default 0
+0  1
+.table Av13_D_23B I653
+.default 0
+0  1
+.table Av13_D_22B I656
+.default 0
+0  1
+.table Av13_D_21B I659
+.default 0
+0  1
+.table C100D v12E v8E I66
+.default 0
+1 1 1  1
+.table Av13_D_20B I662
+.default 0
+0  1
+.table Av13_D_19B I665
+.default 0
+0  1
+.table Av13_D_18B I668
+.default 0
+0  1
+.table Av13_D_17B I671
+.default 0
+0  1
+.table Av13_D_16B I674
+.default 0
+0  1
+.table Av13_D_15B I677
+.default 0
+0  1
+.table C206D v12E I68
+.default 0
+1 1  1
+.table Av13_D_14B I680
+.default 0
+0  1
+.table Av13_D_13B I683
+.default 0
+0  1
+.table Av13_D_12B I686
+.default 0
+0  1
+.table Av13_D_11B I689
+.default 0
+0  1
+.table C202D v7 I69
+.default 0
+1 1  1
+.table Av13_D_10B I692
+.default 0
+0  1
+.table Av13_D_9B I695
+.default 0
+0  1
+.table Av13_D_8B I698
+.default 0
+0  1
+.table Av13_D_7B I701
+.default 0
+0  1
+.table Av13_D_6B I704
+.default 0
+0  1
+.table Av13_D_5B I707
+.default 0
+0  1
+.table C28D v2E I71
+.default 0
+1 1  1
+.table Av13_D_4B I710
+.default 0
+0  1
+.table Av13_D_3B I713
+.default 0
+0  1
+.table Av13_D_2B I716
+.default 0
+0  1
+.table Av13_D_1B I719
+.default 0
+0  1
+.table C38D v7E I72
+.default 0
+1 1  1
+.table Av13_D_0B I722
+.default 0
+0  1
+.table C31D v7 v8 I73
+.default 0
+1 1 1  1
+.table C129DE C144DE I75
+.default 0
+1 1  1
+.table C174D v7E I76
+.default 0
+1 1  1
+.table C196D v7E I78
+.default 0
+1 1  1
+.table C170D v8 I79
+.default 0
+1 1  1
+.table C192D v12E v7 I80
+.default 0
+1 1 1  1
+.table C108DE C217D v0E I82
+.default 0
+1 1 1  1
+.table C225D IN-v11 I83
+.default 0
+1 1  1
+.table C224D v7E I84
+.default 0
+1 1  1
+.table C165DE C54D I86
+.default 0
+1 1  1
+.table C53D v7E I87
+.default 0
+1 1  1
+.table C43D v2E I88
+.default 0
+1 1  1
+.table C48D v7 I89
+.default 0
+1 1  1
+.table C131DE C148D I91
+.default 0
+1 1  1
+.table C140D v7 I92
+.default 0
+1 1  1
+.table C147D v7E I93
+.default 0
+1 1  1
+.table C76D C81DE I95
+.default 0
+1 1  1
+.table C85D v8 I96
+.default 0
+1 1  1
+.table C88D v11E I97
+.default 0
+1 1  1
+.table C87D IN-v12 v8E I98
+.default 0
+1 1 1  1
+.table C169D v7E II142
+.default 0
+1 1  1
+.table C39D v8E II254
+.default 0
+1 1  1
+.table C30D IN-v12 v9 II329
+.default 0
+1 1 1  1
+.table C30D C90DE II368
+.default 0
+1 1  1
+.table C138DE v10E II491
+.default 0
+1 1  1
+.table C194DE v8E v9E II497
+.default 0
+1 1 1  1
+.table v0 v0E
+.default 0
+0  1
+.table IN-v10 v10E
+.default 0
+0  1
+.table IN-v11 v11E
+.default 0
+0  1
+.table IN-v12 v12E
+.default 0
+0  1
+.table I722 v13_D_0
+.default 0
+0  1
+.table CLR v13_D_0 v13_D_0C
+.default 0
+1 1  1
+.table I719 v13_D_1
+.default 0
+0  1
+.table CLR v13_D_1 v13_D_1C
+.default 0
+1 1  1
+.table I716 v13_D_2
+.default 0
+0  1
+.table CLR v13_D_2 v13_D_2C
+.default 0
+1 1  1
+.table I713 v13_D_3
+.default 0
+0  1
+.table I710 v13_D_4
+.default 0
+0  1
+.table I707 v13_D_5
+.default 0
+0  1
+.table v1 v1E
+.default 0
+0  1
+.table v2 v2E
+.default 0
+0  1
+.table v3 v3E
+.default 0
+0  1
+.table v4 v4E
+.default 0
+0  1
+.table v5 v5E
+.default 0
+0  1
+.table v6 v6E
+.default 0
+0  1
+.table v7 v7E
+.default 0
+0  1
+.table v8 v8E
+.default 0
+0  1
+.table v9 v9E
+.default 0
+0  1
+.table I650 v13_D_24
+.default 0
+0  1
+.table I653 v13_D_23
+.default 0
+0  1
+.table I656 v13_D_22
+.default 0
+0  1
+.table I659 v13_D_21
+.default 0
+0  1
+.table I662 v13_D_20
+.default 0
+0  1
+.table I665 v13_D_19
+.default 0
+0  1
+.table I668 v13_D_18
+.default 0
+0  1
+.table I671 v13_D_17
+.default 0
+0  1
+.table I674 v13_D_16
+.default 0
+0  1
+.table I677 v13_D_15
+.default 0
+0  1
+.table I680 v13_D_14
+.default 0
+0  1
+.table I683 v13_D_13
+.default 0
+0  1
+.table I686 v13_D_12
+.default 0
+0  1
+.table I689 v13_D_11
+.default 0
+0  1
+.table I692 v13_D_10
+.default 0
+0  1
+.table I695 v13_D_9
+.default 0
+0  1
+.table I698 v13_D_8
+.default 0
+0  1
+.table I701 v13_D_7
+.default 0
+0  1
+.table I704 v13_D_6
+.default 0
+0  1
+.table CLR v13_D_5 v13_D_5C
+.default 0
+1 1  1
+.table CLR v13_D_4 v13_D_4C
+.default 0
+1 1  1
+.table CLR v13_D_3 v13_D_3C
+.default 0
+1 1  1
+.table IN-v12 v12
+- =IN-v12
+.table IN-v11 v11
+- =IN-v11
+.table IN-v10 v10
+- =IN-v10
+.end

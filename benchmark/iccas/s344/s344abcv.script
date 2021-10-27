@@ -1,0 +1,1 @@
+solve -v benchmark/iccas/s344/s344X.mv  START,B0,B1,B2,B3,A0,A1,A2,A3,ACVQN0,MRVQN3,AX2,AX1,AX0 CT2,CT1,CT0,ACVQN3,ACVQN2,ACVQN1,MRVQN2,MRVQN1,MRVQN0,AX3 benchmark/iccas/s344/s344.bench benchmark/iccas/s344/s344fle.mv 

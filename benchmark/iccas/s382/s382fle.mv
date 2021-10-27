@@ -1,0 +1,593 @@
+.model benchmark/iccas/s382/s382.bench
+.spec benchmark/iccas/s382/s382f.blif
+.inputs FM TEST CLR TESTL FML OLATCH_Y2L OLATCHVUC_6 OLATCHVUC_5 OLATCH_R1L \
+ OLATCH_FEL C3_Q3 C3_Q2 C3_Q1 C3_Q0 UC_16 UC_17 UC_18
+.outputs GRN1 GRN2 RED1 YLW2 RED2 YLW1 OLATCH_G2L OLATCH_G1L UC_19 UC_8 \
+ UC_9 UC_10 UC_11
+.default_input_arrival 0 0
+
+.reset IN-OLATCH_G2L
+0
+.latch TCOMB_GA2 IN-OLATCH_G2L
+.reset IN-OLATCH_G1L
+0
+.latch TCOMB_GA1 IN-OLATCH_G1L
+.reset IN-UC_19
+0
+.latch UC_19VD IN-UC_19
+.reset IN-UC_8
+0
+.latch UC_8VD IN-UC_8
+.reset IN-UC_9
+0
+.latch UC_9VD IN-UC_9
+.reset IN-UC_10
+0
+.latch UC_10VD IN-UC_10
+.reset IN-UC_11
+0
+.latch UC_11VD IN-UC_11
+
+.table IN-UC_10 IN-UC_11 IN-UC_9 C1VCIA
+.default 0
+0 0 0  1
+.table UC_15 C1VCO0
+.default 0
+0  1
+.table UC_14 UC_15 C1VCO1
+.default 0
+0 0  1
+.table UC_13 UC_14 UC_15 C1VCO2
+.default 0
+0 0 0  1
+.table C1VCIA UC_12 C1_CO
+.default 0
+0 0  1
+.table IN-UC_19 UC_17 UC_18 C2VCIA
+.default 0
+0 0 0  1
+.table CTST UC_22 C2VCO0
+.default 0
+0 0  1
+.table CTST UC_21 UC_22 C2VCO1
+.default 0
+0 0 0  1
+.table C2_QN2 CTST UC_21 UC_22 C2VCO2
+.default 0
+0 0 0 0  1
+.table CTST C2VINHN
+.default 0
+0  1
+.table C2VCIA CTST UC_20 C2_CO
+.default 0
+0 0 0  1
+.table UC_17 C2_QN2
+.default 0
+0  1
+.table C3_Q0 C3_Q1 C3_Q2 C3VCIA
+.default 0
+0 0 0  1
+.table CO2 UC_26 C3VCO0
+.default 0
+0 0  1
+.table CO2 UC_25 UC_26 C3VCO1
+.default 0
+0 0 0  1
+.table CO2 UC_24 UC_25 UC_26 C3VCO2
+.default 0
+0 0 0 0  1
+.table CO2 C3VINHN
+.default 0
+0  1
+.table C3_Q0VZ CLRB UC_27 C3_Q0VD
+.default 0
+0 0 0  1
+.table C3VINHN C3_Q0 C3_Q0VUC_0
+.default 0
+- 0  1
+0 -  1
+.table C3_Q0VUC_0 C3_Q0VZVOR1NF C3_Q0VZ
+.default 0
+- 0  1
+0 -  1
+.table C3VINHN C3_Q0 C3_Q0VZVOR1NF
+.default 0
+- 1  1
+1 -  1
+.table C3_Q1VZ CLRB UC_27 C3_Q1VD
+.default 0
+0 0 0  1
+.table C3VCO0 C3_Q1 C3_Q1VUC_0
+.default 0
+- 0  1
+0 -  1
+.table C3_Q1VUC_0 C3_Q1VZVOR1NF C3_Q1VZ
+.default 0
+- 0  1
+0 -  1
+.table C3VCO0 C3_Q1 C3_Q1VZVOR1NF
+.default 0
+- 1  1
+1 -  1
+.table C3_Q2VZ CLRB UC_27 C3_Q2VD
+.default 0
+0 0 0  1
+.table C3VCO1 C3_Q2 C3_Q2VUC_0
+.default 0
+- 0  1
+0 -  1
+.table C3_Q2VUC_0 C3_Q2VZVOR1NF C3_Q2VZ
+.default 0
+- 0  1
+0 -  1
+.table C3VCO1 C3_Q2 C3_Q2VZVOR1NF
+.default 0
+- 1  1
+1 -  1
+.table C3_Q3VZ CLRB UC_27 C3_Q3VD
+.default 0
+0 0 0  1
+.table C3_Q3VZVOR1NF C3_Q3VZ
+.default 0
+0  1
+.table C3VCO2 C3_Q3 C3_Q3VZVOR1NF
+.default 0
+- 1  1
+1 -  1
+.table CLRBVIR1 CLRB
+.default 0
+0  1
+.table CLR CLRBVIR1
+.default 0
+0  1
+.table C2_CO CO2
+.default 0
+0  1
+.table C1_CO TESTL CTST
+.default 0
+0 0  1
+.table TCOMB_FE FEN
+.default 0
+0  1
+.table FMBVIR1 FMB
+.default 0
+0  1
+.table FM FMBVIR1
+.default 0
+0  1
+.table FML FMLVINLATCHN
+.default 0
+0  1
+.table FMLVINLATCHVCDN FMLVINMUX FMLVINLATCHVCDAD
+.default 0
+1 1  1
+.table CLRB FMLVINLATCHVCDN
+.default 0
+0  1
+.table FMLVINMUXVND1 FMLVINMUX
+.default 0
+0  1
+.table FMB FMLVINMUXVIR1
+.default 0
+0  1
+.table FMLVINMUXVOR1NF FMLVINMUXVOR2NF FMLVINMUXVND1
+.default 0
+- 0  1
+0 -  1
+.table FMB FML FMLVINMUXVOR1NF
+.default 0
+- 1  1
+1 -  1
+.table FMLVINLATCHN FMLVINMUXVIR1 FMLVINMUXVOR2NF
+.default 0
+- 1  1
+1 -  1
+.table TCOMB_FE I84
+.default 0
+0  1
+.table OLATCHVUC_5 OLATCH_R2L
+.default 0
+0  1
+.table OLATCHVUC_6 OLATCH_Y1L
+.default 0
+0  1
+.table IN-OLATCH_G1L OUTBUFVBUFG1VIR1
+.default 0
+0  1
+.table IN-OLATCH_G2L OUTBUFVBUFG2VIR1
+.default 0
+0  1
+.table OLATCH_R1L OUTBUFVBUFR1VIR1
+.default 0
+0  1
+.table OLATCH_R2L OUTBUFVBUFR2VIR1
+.default 0
+0  1
+.table OLATCH_Y1L OUTBUFVBUFY1VIR1
+.default 0
+0  1
+.table OLATCH_Y2L OUTBUFVBUFY2VIR1
+.default 0
+0  1
+.table R2CVAD1NF R2CVAD2NF R2C
+.default 0
+0 0  1
+.table C2_QN2 TCOMB_FE R2CVAD1NF
+.default 0
+1 1  1
+.table FEN TCOMB_RA2 R2CVAD2NF
+.default 0
+1 1  1
+.table CLRB TCOMBVNCLR
+.default 0
+0  1
+.table OLATCH_FEL TCOMBVNFEL
+.default 0
+0  1
+.table FML TCOMBVNFM
+.default 0
+0  1
+.table C3_Q1 TCOMBVNCLR TCOMBVNFEL TCOMBVNQC TCOMBVNODE12
+.default 0
+- - - 0  1
+- - 0 -  1
+- 0 - -  1
+0 - - -  1
+.table TCOMBVNODE15 TCOMBVNQA TCOMBVNODE14
+.default 0
+- 0  1
+0 -  1
+.table C3_Q1 CLRB TCOMBVNFM TCOMBVNQC TCOMBVNODE15
+.default 0
+0 0 0 0  1
+.table TCOMBVNODE16VOR1NF TCOMBVNODE19 TCOMBVNODE16
+.default 0
+- 0  1
+0 -  1
+.table C3_Q3 FML TCOMBVNODE18 TCOMBVNQC TCOMBVNODE16VOR1NF
+.default 0
+- - - 1  1
+- - 1 -  1
+- 1 - -  1
+1 - - -  1
+.table C3_Q0 TCOMBVNQB TCOMBVNODE18
+.default 0
+- 0  1
+0 -  1
+.table CLRB TCOMBVNFEL TCOMBVNODE19
+.default 0
+0 0  1
+.table TCOMBVNODE4 TCOMBVNQA TCOMBVNQB TCOMBVNODE3
+.default 0
+- - 0  1
+- 0 -  1
+0 - -  1
+.table TCOMBVNODE4VOR1NF TCOMBVNODE4VOR2NF TCOMBVNODE4
+.default 0
+- 0  1
+0 -  1
+.table C3_Q3 CLRB TCOMBVNFM TCOMBVNQC TCOMBVNODE4VOR1NF
+.default 0
+- - - 1  1
+- - 1 -  1
+- 1 - -  1
+1 - - -  1
+.table C3_Q2 CLRB TCOMBVNQD TCOMBVNODE4VOR2NF
+.default 0
+- - 1  1
+- 1 -  1
+1 - -  1
+.table C3_Q0 TCOMBVNFM TCOMBVNQB TCOMBVNQD TCOMBVNODE6
+.default 0
+- - - 0  1
+- - 0 -  1
+- 0 - -  1
+0 - - -  1
+.table C3_Q2 TCOMBVNCLR TCOMBVNODE8VOR1NF TCOMBVNODE8VOR2NF TCOMBVNODE8
+.default 0
+- - - 0  1
+- - 0 -  1
+- 0 - -  1
+0 - - -  1
+.table C3_Q0 C3_Q1 TCOMBVNFM TCOMBVNODE8VOR1NF
+.default 0
+- - 1  1
+- 1 -  1
+1 - -  1
+.table TCOMBVNFM TCOMBVNQD TCOMBVNODE8VOR2NF
+.default 0
+- 1  1
+1 -  1
+.table C3_Q0 TCOMBVNQA
+.default 0
+0  1
+.table C3_Q1 TCOMBVNQB
+.default 0
+0  1
+.table C3_Q2 TCOMBVNQC
+.default 0
+0  1
+.table C3_Q3 TCOMBVNQD
+.default 0
+0  1
+.table TCOMBVNODE14 TCOMBVNODE16 TCOMB_FE
+.default 0
+- 0  1
+0 -  1
+.table I84 TCOMB_FE_BF
+.default 0
+0  1
+.table OLATCH_FEL TCOMBVNODE6 TCOMB_GA1VAD1NF
+.default 0
+1 1  1
+.table C3_Q3 TCOMBVNCLR TCOMBVNQA TCOMB_GA2VAD1NF
+.default 0
+1 1 1  1
+.table C3_Q0 C3_Q1 TCOMBVNCLR TCOMB_GA2VAD2NF
+.default 0
+1 1 1  1
+.table C3_Q2 TCOMBVNCLR TCOMB_GA2VAD3NF
+.default 0
+1 1  1
+.table OLATCH_FEL TCOMBVNCLR TCOMB_GA2VAD4NF
+.default 0
+1 1  1
+.table TCOMBVNCLR TCOMB_RA1VOR1NF TCOMB_RA1VOR2NF TCOMB_RA1
+.default 0
+- - 0  1
+- 0 -  1
+0 - -  1
+.table C3_Q1 C3_Q2 OLATCH_FEL TCOMBVNQA TCOMB_RA1VOR1NF
+.default 0
+- - - 1  1
+- - 1 -  1
+- 1 - -  1
+1 - - -  1
+.table C3_Q2 C3_Q3 OLATCH_FEL TCOMB_RA1VOR2NF
+.default 0
+- - 1  1
+- 1 -  1
+1 - -  1
+.table TCOMB_RA2VOR1NF TCOMB_RA2VOR3NF TCOMB_RA2
+.default 0
+- 0  1
+0 -  1
+.table C3_Q0 C3_Q1 CLRB TCOMBVNQD TCOMB_RA2VOR1NF
+.default 0
+- - - 1  1
+- - 1 -  1
+- 1 - -  1
+1 - - -  1
+.table CLRB TCOMBVNQC TCOMB_RA2VOR3NF
+.default 0
+- 1  1
+1 -  1
+.table TCOMBVNODE16 TCOMBVNODE3 TCOMB_YA1
+.default 0
+- 0  1
+0 -  1
+.table TCOMBVNODE12 TCOMBVNQA TCOMB_YA2
+.default 0
+0 0  1
+.table TESTBVIR1 TESTB
+.default 0
+0  1
+.table TEST TESTBVIR1
+.default 0
+0  1
+.table TESTL TESTLVINLATCHN
+.default 0
+0  1
+.table TESTLVINLATCHVCDN TESTLVINMUX TESTLVINLATCHVCDAD
+.default 0
+1 1  1
+.table CLRB TESTLVINLATCHVCDN
+.default 0
+0  1
+.table TESTLVINMUXVND1 TESTLVINMUX
+.default 0
+0  1
+.table TESTB TESTLVINMUXVIR1
+.default 0
+0  1
+.table TESTLVINMUXVOR1NF TESTLVINMUXVOR2NF TESTLVINMUXVND1
+.default 0
+- 0  1
+0 -  1
+.table TESTB TESTL TESTLVINMUXVOR1NF
+.default 0
+- 1  1
+1 -  1
+.table TESTLVINLATCHN TESTLVINMUXVIR1 TESTLVINMUXVOR2NF
+.default 0
+- 1  1
+1 -  1
+.table C1VCO0 IN-UC_10 UC_10VUC_0
+.default 0
+- 0  1
+0 -  1
+.table UC_10VUC_0 UC_10VZVOR1NF UC_10VZ
+.default 0
+- 0  1
+0 -  1
+.table C1VCO0 IN-UC_10 UC_10VZVOR1NF
+.default 0
+- 1  1
+1 -  1
+.table IN-UC_11 UC_11VUC_0
+.default 0
+0  1
+.table UC_11VUC_0 UC_11VZ
+.default 0
+0  1
+.table IN-UC_8 UC_12
+.default 0
+0  1
+.table IN-UC_9 UC_13
+.default 0
+0  1
+.table IN-UC_10 UC_14
+.default 0
+0  1
+.table IN-UC_11 UC_15
+.default 0
+0  1
+.table C2_CO CLRB UC_16VZ UC_16VD
+.default 0
+0 0 0  1
+.table UC_16VZVOR1NF UC_16VZ
+.default 0
+0  1
+.table C2VCO2 UC_16 UC_16VZVOR1NF
+.default 0
+- 1  1
+1 -  1
+.table C2_CO CLRB UC_17VZ UC_17VD
+.default 0
+0 0 0  1
+.table C2VCO1 UC_17 UC_17VUC_0
+.default 0
+- 0  1
+0 -  1
+.table UC_17VUC_0 UC_17VZVOR1NF UC_17VZ
+.default 0
+- 0  1
+0 -  1
+.table C2VCO1 UC_17 UC_17VZVOR1NF
+.default 0
+- 1  1
+1 -  1
+.table C2_CO CLRB UC_18VZ UC_18VD
+.default 0
+0 0 0  1
+.table C2VCO0 UC_18 UC_18VUC_0
+.default 0
+- 0  1
+0 -  1
+.table UC_18VUC_0 UC_18VZVOR1NF UC_18VZ
+.default 0
+- 0  1
+0 -  1
+.table C2VCO0 UC_18 UC_18VZVOR1NF
+.default 0
+- 1  1
+1 -  1
+.table C2VINHN IN-UC_19 UC_19VUC_0
+.default 0
+- 0  1
+0 -  1
+.table UC_19VUC_0 UC_19VZVOR1NF UC_19VZ
+.default 0
+- 0  1
+0 -  1
+.table C2VINHN IN-UC_19 UC_19VZVOR1NF
+.default 0
+- 1  1
+1 -  1
+.table UC_16 UC_20
+.default 0
+0  1
+.table UC_18 UC_21
+.default 0
+0  1
+.table IN-UC_19 UC_22
+.default 0
+0  1
+.table C3_Q3 UC_23
+.default 0
+0  1
+.table C3_Q2 UC_24
+.default 0
+0  1
+.table C3_Q1 UC_25
+.default 0
+0  1
+.table C3_Q0 UC_26
+.default 0
+0  1
+.table C3VCIA CO2 UC_23 UC_27
+.default 0
+0 0 0  1
+.table UC_8VZVOR1NF UC_8VZ
+.default 0
+0  1
+.table C1VCO2 IN-UC_8 UC_8VZVOR1NF
+.default 0
+- 1  1
+1 -  1
+.table C1VCO1 IN-UC_9 UC_9VUC_0
+.default 0
+- 0  1
+0 -  1
+.table UC_9VUC_0 UC_9VZVOR1NF UC_9VZ
+.default 0
+- 0  1
+0 -  1
+.table C1VCO1 IN-UC_9 UC_9VZVOR1NF
+.default 0
+- 1  1
+1 -  1
+.table Y1CVAD1NF Y1CVAD2NF Y1C
+.default 0
+0 0  1
+.table C2_QN2 TCOMB_YA1 Y1CVAD1NF
+.default 0
+1 1  1
+.table FEN TCOMB_YA1 Y1CVAD2NF
+.default 0
+1 1  1
+.table OUTBUFVBUFG1VIR1 GRN1
+.default 0
+0  1
+.table OUTBUFVBUFG2VIR1 GRN2
+.default 0
+0  1
+.table OUTBUFVBUFR1VIR1 RED1
+.default 0
+0  1
+.table OUTBUFVBUFY2VIR1 YLW2
+.default 0
+0  1
+.table OUTBUFVBUFR2VIR1 RED2
+.default 0
+0  1
+.table OUTBUFVBUFY1VIR1 YLW1
+.default 0
+0  1
+.table TCOMB_GA2VAD1NF TCOMB_GA2VAD2NF TCOMB_GA2VAD3NF TCOMB_GA2VAD4NF \
+ TCOMB_GA2
+.default 0
+0 0 0 0  1
+.table TCOMBVNODE8 TCOMB_GA1VAD1NF TCOMB_GA1
+.default 0
+0 0  1
+.table C2_CO CLRB UC_19VZ UC_19VD
+.default 0
+0 0 0  1
+.table C1_CO CLRB UC_8VZ UC_8VD
+.default 0
+0 0 0  1
+.table C1_CO CLRB UC_9VZ UC_9VD
+.default 0
+0 0 0  1
+.table C1_CO CLRB UC_10VZ UC_10VD
+.default 0
+0 0 0  1
+.table C1_CO CLRB UC_11VZ UC_11VD
+.default 0
+0 0 0  1
+.table IN-OLATCH_G2L OLATCH_G2L
+- =IN-OLATCH_G2L
+.table IN-OLATCH_G1L OLATCH_G1L
+- =IN-OLATCH_G1L
+.table IN-UC_19 UC_19
+- =IN-UC_19
+.table IN-UC_8 UC_8
+- =IN-UC_8
+.table IN-UC_9 UC_9
+- =IN-UC_9
+.table IN-UC_10 UC_10
+- =IN-UC_10
+.table IN-UC_11 UC_11
+- =IN-UC_11
+.end

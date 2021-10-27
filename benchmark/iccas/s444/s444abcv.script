@@ -1,0 +1,1 @@
+solve -v benchmark/iccas/s444/s444X.mv G0,G1,G2,G27,G28,G29,G30,G31 G11,G12,G13,G14,G15,G16,G17,G18,G19,G20,G21,G22,G23,G24,G25,G26 benchmark/iccas/s444/s444.bench benchmark/iccas/s444/s444fle.mv 

@@ -1,0 +1,1 @@
+solve -v benchmark/iccas/s298/s298X.mv G0,G1,G2,G17,G18,G19,G20,G21,G22,G23 G10,G11,G12,G13,G14,G15,G16 benchmark/iccas/s298/s298.mv benchmark/iccas/s298/s298fle.mv 

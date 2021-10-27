@@ -1,0 +1,1389 @@
+.model benchmark/iccas/s838/s838.bench
+.spec benchmark/iccas/s838/s838.bench
+.inputs X Clear C_32 C_31 C_30 C_29 C_28 C_27 C_26 C_25 C_24 C_23 C_22 C_21 \
+ C_20 C_19 C_18 C_17 C_16 C_15 C_14 C_13 C_12 C_11 C_10 C_9 C_8 C_7 C_6 C_5 \
+ C_4 C_3 C_2 C_1 C_0
+.outputs W Z
+.default_input_arrival 0 0
+
+.reset Y_4
+0
+.latch II3 Y_4
+.reset Y_3
+0
+.latch II4 Y_3
+.reset Y_2
+0
+.latch II5 Y_2
+.reset Y_1
+0
+.latch II6 Y_1
+.reset Y_8
+0
+.latch II155 Y_8
+.reset Y_7
+0
+.latch II156 Y_7
+.reset Y_6
+0
+.latch II157 Y_6
+.reset Y_5
+0
+.latch II158 Y_5
+.reset Y_12
+0
+.latch II307 Y_12
+.reset Y_11
+0
+.latch II308 Y_11
+.reset Y_10
+0
+.latch II309 Y_10
+.reset Y_9
+0
+.latch II310 Y_9
+.reset Y_16
+0
+.latch II459 Y_16
+.reset Y_15
+0
+.latch II460 Y_15
+.reset Y_14
+0
+.latch II461 Y_14
+.reset Y_13
+0
+.latch II462 Y_13
+.reset Y_20
+0
+.latch II611 Y_20
+.reset Y_19
+0
+.latch II612 Y_19
+.reset Y_18
+0
+.latch II613 Y_18
+.reset Y_17
+0
+.latch II614 Y_17
+.reset Y_24
+0
+.latch II763 Y_24
+.reset Y_23
+0
+.latch II764 Y_23
+.reset Y_22
+0
+.latch II765 Y_22
+.reset Y_21
+0
+.latch II766 Y_21
+.reset Y_28
+0
+.latch II915 Y_28
+.reset Y_27
+0
+.latch II916 Y_27
+.reset Y_26
+0
+.latch II917 Y_26
+.reset Y_25
+0
+.latch II918 Y_25
+.reset Y_32
+0
+.latch II1067 Y_32
+.reset Y_31
+0
+.latch II1068 Y_31
+.reset Y_30
+0
+.latch II1069 Y_30
+.reset Y_29
+0
+.latch II1070 Y_29
+
+.table II113 Y_1 II100
+.default 0
+- 0  1
+0 -  1
+.table Y_25 Y_26 II1004
+.default 0
+- 0  1
+0 -  1
+.table II962 Y_27 II1008
+.default 0
+- 0  1
+0 -  1
+.table II1025 Y_25 II1012
+.default 0
+- 0  1
+0 -  1
+.table II1025 II956 II1016
+.default 0
+- 0  1
+0 -  1
+.table II1012 II955 II1021
+.default 0
+0 0  1
+.table Clear II952 II1025
+.default 0
+0 0  1
+.table II1021 II953 Y_27 II1039_1
+.default 0
+1 1 1  1
+.table II1008 II1025 Y_28 II1039_2
+.default 0
+1 1 1  1
+.table II113 II44 II104
+.default 0
+- 0  1
+0 -  1
+.table II1004 II1025 Y_27 II1043_1
+.default 0
+1 1 1  1
+.table II1021 II954 II1043_2
+.default 0
+1 1  1
+.table II1016 II955 II1047_1
+.default 0
+- 1  1
+1 -  1
+.table II1012 Y_26 II1047_2
+.default 0
+- 1  1
+1 -  1
+.table II100 II43 II109
+.default 0
+0 0  1
+.table II1_7 II1104
+.default 0
+0  1
+.table Y_32 II1105
+.default 0
+0  1
+.table Y_31 II1106
+.default 0
+0  1
+.table Y_30 II1107
+.default 0
+0  1
+.table Y_29 II1108
+.default 0
+0  1
+.table II1191_1 II1191_2 II1110
+.default 0
+0 0  1
+.table II1195_1 II1195_2 II1111
+.default 0
+0 0  1
+.table II1156 II1114
+.default 0
+0  1
+.table Clear II40 II113
+.default 0
+0 0  1
+.table Y_29 Y_30 II1156
+.default 0
+- 0  1
+0 -  1
+.table II1114 Y_31 II1160
+.default 0
+- 0  1
+0 -  1
+.table II1177 Y_29 II1164
+.default 0
+- 0  1
+0 -  1
+.table II1108 II1177 II1168
+.default 0
+- 0  1
+0 -  1
+.table II1107 II1164 II1173
+.default 0
+0 0  1
+.table Clear II1104 II1177
+.default 0
+0 0  1
+.table II1105 II1173 Y_31 II1191_1
+.default 0
+1 1 1  1
+.table II1160 II1177 Y_32 II1191_2
+.default 0
+1 1 1  1
+.table II1156 II1177 Y_31 II1195_1
+.default 0
+1 1 1  1
+.table II1106 II1173 II1195_2
+.default 0
+1 1  1
+.table II1107 II1168 II1199_1
+.default 0
+- 1  1
+1 -  1
+.table II1164 Y_30 II1199_2
+.default 0
+- 1  1
+1 -  1
+.table II1253 II1219_1
+.default 0
+0  1
+.table II1316 II1219_2
+.default 0
+0  1
+.table II1384 II1219_3
+.default 0
+0  1
+.table II1452 II1219_4
+.default 0
+0  1
+.table II1520 II1219_5
+.default 0
+0  1
+.table II1588 II1219_6
+.default 0
+0  1
+.table II1656 II1219_7
+.default 0
+0  1
+.table Y_1 II1221
+.default 0
+0  1
+.table Y_2 II1222
+.default 0
+0  1
+.table Y_3 II1223
+.default 0
+0  1
+.table X Y_1 II1226
+.default 0
+- 0  1
+0 -  1
+.table II1259 Y_3 II1228
+.default 0
+- 0  1
+0 -  1
+.table II1230 Y_4 II1229
+.default 0
+- 0  1
+0 -  1
+.table II1253 II1230
+.default 0
+0  1
+.table II1223 II1259 II1253
+.default 0
+- 0  1
+0 -  1
+.table II1262 Y_2 II1259
+.default 0
+0 0  1
+.table II1221 X II1262
+.default 0
+- 0  1
+0 -  1
+.table II109 II41 Y_3 II127_1
+.default 0
+1 1 1  1
+.table II113 II96 Y_4 II127_2
+.default 0
+1 1 1  1
+.table Y_4 II1280
+.default 0
+0  1
+.table Y_5 II1281
+.default 0
+0  1
+.table Y_6 II1282
+.default 0
+0  1
+.table Y_7 II1283
+.default 0
+0  1
+.table II1321 Y_7 II1288
+.default 0
+- 0  1
+0 -  1
+.table II1290 Y_8 II1289
+.default 0
+- 0  1
+0 -  1
+.table II1316 II1290
+.default 0
+0  1
+.table II1283 II1321 II1316
+.default 0
+- 0  1
+0 -  1
+.table II113 II92 Y_3 II131_1
+.default 0
+1 1 1  1
+.table II109 II42 II131_2
+.default 0
+1 1  1
+.table II1324 Y_6 II1321
+.default 0
+0 0  1
+.table II1281 II1329 II1324
+.default 0
+- 0  1
+0 -  1
+.table II1219_1 II1280 II1328
+.default 0
+- 0  1
+0 -  1
+.table II1328 II1329
+.default 0
+0  1
+.table Y_8 II1348
+.default 0
+0  1
+.table Y_9 II1349
+.default 0
+0  1
+.table Y_10 II1350
+.default 0
+0  1
+.table Y_11 II1351
+.default 0
+0  1
+.table II1389 Y_11 II1356
+.default 0
+- 0  1
+0 -  1
+.table II1358 Y_12 II1357
+.default 0
+- 0  1
+0 -  1
+.table II1384 II1358
+.default 0
+0  1
+.table II104 II43 II135_1
+.default 0
+- 1  1
+1 -  1
+.table II100 Y_2 II135_2
+.default 0
+- 1  1
+1 -  1
+.table II1351 II1389 II1384
+.default 0
+- 0  1
+0 -  1
+.table II1392 Y_10 II1389
+.default 0
+0 0  1
+.table II1349 II1397 II1392
+.default 0
+- 0  1
+0 -  1
+.table II1219_2 II1348 II1396
+.default 0
+- 0  1
+0 -  1
+.table II1396 II1397
+.default 0
+0  1
+.table Y_12 II1416
+.default 0
+0  1
+.table Y_13 II1417
+.default 0
+0  1
+.table Y_14 II1418
+.default 0
+0  1
+.table Y_15 II1419
+.default 0
+0  1
+.table II1457 Y_15 II1424
+.default 0
+- 0  1
+0 -  1
+.table II1426 Y_16 II1425
+.default 0
+- 0  1
+0 -  1
+.table II1452 II1426
+.default 0
+0  1
+.table II1419 II1457 II1452
+.default 0
+- 0  1
+0 -  1
+.table II1460 Y_14 II1457
+.default 0
+0 0  1
+.table II1417 II1465 II1460
+.default 0
+- 0  1
+0 -  1
+.table II1219_3 II1416 II1464
+.default 0
+- 0  1
+0 -  1
+.table II1464 II1465
+.default 0
+0  1
+.table Y_16 II1484
+.default 0
+0  1
+.table Y_17 II1485
+.default 0
+0  1
+.table Y_18 II1486
+.default 0
+0  1
+.table Y_19 II1487
+.default 0
+0  1
+.table II1525 Y_19 II1492
+.default 0
+- 0  1
+0 -  1
+.table II1494 Y_20 II1493
+.default 0
+- 0  1
+0 -  1
+.table II1520 II1494
+.default 0
+0  1
+.table II1487 II1525 II1520
+.default 0
+- 0  1
+0 -  1
+.table II1528 Y_18 II1525
+.default 0
+0 0  1
+.table II1485 II1533 II1528
+.default 0
+- 0  1
+0 -  1
+.table II1219_4 II1484 II1532
+.default 0
+- 0  1
+0 -  1
+.table II1532 II1533
+.default 0
+0  1
+.table Y_20 II1552
+.default 0
+0  1
+.table Y_21 II1553
+.default 0
+0  1
+.table Y_22 II1554
+.default 0
+0  1
+.table Y_23 II1555
+.default 0
+0  1
+.table II1593 Y_23 II1560
+.default 0
+- 0  1
+0 -  1
+.table II1562 Y_24 II1561
+.default 0
+- 0  1
+0 -  1
+.table II1588 II1562
+.default 0
+0  1
+.table II1555 II1593 II1588
+.default 0
+- 0  1
+0 -  1
+.table II1596 Y_22 II1593
+.default 0
+0 0  1
+.table II1553 II1601 II1596
+.default 0
+- 0  1
+0 -  1
+.table II1219_5 II1552 II1600
+.default 0
+- 0  1
+0 -  1
+.table II1600 II1601
+.default 0
+0  1
+.table Y_24 II1620
+.default 0
+0  1
+.table Y_25 II1621
+.default 0
+0  1
+.table Y_26 II1622
+.default 0
+0  1
+.table Y_27 II1623
+.default 0
+0  1
+.table II1661 Y_27 II1628
+.default 0
+- 0  1
+0 -  1
+.table II1630 Y_28 II1629
+.default 0
+- 0  1
+0 -  1
+.table II1656 II1630
+.default 0
+0  1
+.table II1623 II1661 II1656
+.default 0
+- 0  1
+0 -  1
+.table II1664 Y_26 II1661
+.default 0
+0 0  1
+.table II1621 II1669 II1664
+.default 0
+- 0  1
+0 -  1
+.table II1219_6 II1620 II1668
+.default 0
+- 0  1
+0 -  1
+.table II1668 II1669
+.default 0
+0  1
+.table Y_28 II1688
+.default 0
+0  1
+.table Y_29 II1689
+.default 0
+0  1
+.table Y_30 II1690
+.default 0
+0  1
+.table Y_31 II1691
+.default 0
+0  1
+.table Y_32 II1692
+.default 0
+0  1
+.table II1726 Y_30 II1694
+.default 0
+- 0  1
+0 -  1
+.table II1690 II1726 II1698
+.default 0
+- 0  1
+0 -  1
+.table II1729 Y_29 II1726
+.default 0
+0 0  1
+.table II1219_7 II1688 II1729
+.default 0
+- 0  1
+0 -  1
+.table C_1 P_1 II1821
+.default 0
+- 0  1
+0 -  1
+.table C_4 P_4 II1833
+.default 0
+- 0  1
+0 -  1
+.table C_6 P_6 II1841
+.default 0
+- 0  1
+0 -  1
+.table C_12 P_12 II1865
+.default 0
+- 0  1
+0 -  1
+.table C_17 P_17 II1885
+.default 0
+- 0  1
+0 -  1
+.table C_21 P_21 II1901
+.default 0
+- 0  1
+0 -  1
+.table C_22 P_22 II1905
+.default 0
+- 0  1
+0 -  1
+.table II1_1 II192
+.default 0
+0  1
+.table Y_8 II193
+.default 0
+0  1
+.table Y_7 II194
+.default 0
+0  1
+.table II1948 II1947
+.default 0
+0  1
+.table II2017_1 II2017_2 II1948
+.default 0
+0 0  1
+.table Y_6 II195
+.default 0
+0  1
+.table II2021_1 II2021_2 II1950
+.default 0
+0 0  1
+.table II1952 II1951
+.default 0
+0  1
+.table II2025_1 II2025_2 II1952
+.default 0
+0 0  1
+.table II1956 II1955
+.default 0
+0  1
+.table II1951 II2029_1 II1956
+.default 0
+0 0  1
+.table Y_5 II196
+.default 0
+0  1
+.table II1964 II1963
+.default 0
+0  1
+.table II2032_1 II2032_2 II2032_3 II1964
+.default 0
+0 0 0  1
+.table II1966 II1965
+.default 0
+0  1
+.table II1955 II2037_1 II1966
+.default 0
+0 0  1
+.table II1972 II1971
+.default 0
+0  1
+.table II1947 II2040_1 II1972
+.default 0
+0 0  1
+.table II1974 II1973
+.default 0
+0  1
+.table II2043_1 II2043_2 II1974
+.default 0
+0 0  1
+.table II1963 II2047_1 II2047_2 II1976
+.default 0
+0 0 0  1
+.table II1971 II2051_1 II2051_2 II1978
+.default 0
+0 0 0  1
+.table II279_1 II279_2 II198
+.default 0
+0 0  1
+.table II1965 II2055_1 II2055_2 II1982
+.default 0
+0 0 0  1
+.table II2059_1 II2059_2 II1986
+.default 0
+0 0  1
+.table II283_1 II283_2 II199
+.default 0
+0 0  1
+.table II1973 II2063_1 II2063_2 II1990
+.default 0
+0 0 0  1
+.table II1885 II1982 II1986 II1990 II1995
+.default 0
+- - - 0  1
+- - 0 -  1
+- 0 - -  1
+0 - - -  1
+.table II1995 II1996
+.default 0
+0  1
+.table II1821 II1833 II1905 II1950 II1997
+.default 0
+- - - 0  1
+- - 0 -  1
+- 0 - -  1
+0 - - -  1
+.table II41 II96 II1_1
+.default 0
+0 0  1
+.table II193 II248 II1_2
+.default 0
+0 0  1
+.table II345 II400 II1_3
+.default 0
+0 0  1
+.table II497 II552 II1_4
+.default 0
+0 0  1
+.table II649 II704 II1_5
+.default 0
+0 0  1
+.table II801 II856 II1_6
+.default 0
+0 0  1
+.table II1008 II953 II1_7
+.default 0
+0 0  1
+.table II1841 II1865 II1901 II1978 II2001
+.default 0
+- - - 0  1
+- - 0 -  1
+- 0 - -  1
+0 - - -  1
+.table II2001 II2002
+.default 0
+0  1
+.table II1997 II2070_1 II2070_2 II2008
+.default 0
+0 0 0  1
+.table C_29 P_29 II2017_1
+.default 0
+1 1  1
+.table C_19 P_19 II2017_2
+.default 0
+1 1  1
+.table II244 II202
+.default 0
+0  1
+.table C_30 P_30 II2021_1
+.default 0
+1 1  1
+.table C_31 P_31 II2021_2
+.default 0
+1 1  1
+.table C_32 P_32 II2025_1
+.default 0
+1 1  1
+.table C_24 P_24 II2025_2
+.default 0
+1 1  1
+.table C_23 P_23 II2029_1
+.default 0
+1 1  1
+.table C_28 P_28 II2032_1
+.default 0
+1 1  1
+.table C_11 P_11 II2032_2
+.default 0
+1 1  1
+.table C_15 P_15 II2032_3
+.default 0
+1 1  1
+.table C_14 P_14 II2037_1
+.default 0
+1 1  1
+.table C_7 P_7 II2040_1
+.default 0
+1 1  1
+.table C_18 P_18 II2043_1
+.default 0
+1 1  1
+.table C_20 P_20 II2043_2
+.default 0
+1 1  1
+.table C_10 P_10 II2047_1
+.default 0
+1 1  1
+.table C_3 P_3 II2047_2
+.default 0
+1 1  1
+.table C_8 P_8 II2051_1
+.default 0
+1 1  1
+.table C_27 P_27 II2051_2
+.default 0
+1 1  1
+.table C_26 P_26 II2055_1
+.default 0
+1 1  1
+.table C_2 P_2 II2055_2
+.default 0
+1 1  1
+.table C_0 X II2059_1
+.default 0
+1 1  1
+.table C_25 P_25 II2059_2
+.default 0
+1 1  1
+.table C_16 P_16 II2063_1
+.default 0
+1 1  1
+.table C_5 P_5 II2063_2
+.default 0
+1 1  1
+.table C_13 P_13 II2070_1
+.default 0
+1 1  1
+.table C_9 P_9 II2070_2
+.default 0
+1 1  1
+.table Y_5 Y_6 II244
+.default 0
+- 0  1
+0 -  1
+.table II202 Y_7 II248
+.default 0
+- 0  1
+0 -  1
+.table II265 Y_5 II252
+.default 0
+- 0  1
+0 -  1
+.table II196 II265 II256
+.default 0
+- 0  1
+0 -  1
+.table II195 II252 II261
+.default 0
+0 0  1
+.table Clear II192 II265
+.default 0
+0 0  1
+.table II193 II261 Y_7 II279_1
+.default 0
+1 1 1  1
+.table II248 II265 Y_8 II279_2
+.default 0
+1 1 1  1
+.table II244 II265 Y_7 II283_1
+.default 0
+1 1 1  1
+.table II194 II261 II283_2
+.default 0
+1 1  1
+.table II195 II256 II287_1
+.default 0
+- 1  1
+1 -  1
+.table II252 Y_6 II287_2
+.default 0
+- 1  1
+1 -  1
+.table II1_2 II344
+.default 0
+0  1
+.table Y_12 II345
+.default 0
+0  1
+.table Y_11 II346
+.default 0
+0  1
+.table Y_10 II347
+.default 0
+0  1
+.table Y_9 II348
+.default 0
+0  1
+.table II431_1 II431_2 II350
+.default 0
+0 0  1
+.table II435_1 II435_2 II351
+.default 0
+0 0  1
+.table II396 II354
+.default 0
+0  1
+.table Y_10 Y_9 II396
+.default 0
+- 0  1
+0 -  1
+.table X II40
+.default 0
+0  1
+.table II354 Y_11 II400
+.default 0
+- 0  1
+0 -  1
+.table II417 Y_9 II404
+.default 0
+- 0  1
+0 -  1
+.table II348 II417 II408
+.default 0
+- 0  1
+0 -  1
+.table Y_4 II41
+.default 0
+0  1
+.table II347 II404 II413
+.default 0
+0 0  1
+.table Clear II344 II417
+.default 0
+0 0  1
+.table Y_3 II42
+.default 0
+0  1
+.table Y_2 II43
+.default 0
+0  1
+.table II345 II413 Y_11 II431_1
+.default 0
+1 1 1  1
+.table II400 II417 Y_12 II431_2
+.default 0
+1 1 1  1
+.table II396 II417 Y_11 II435_1
+.default 0
+1 1 1  1
+.table II346 II413 II435_2
+.default 0
+1 1  1
+.table II347 II408 II439_1
+.default 0
+- 1  1
+1 -  1
+.table II404 Y_10 II439_2
+.default 0
+- 1  1
+1 -  1
+.table Y_1 II44
+.default 0
+0  1
+.table II127_1 II127_2 II46
+.default 0
+0 0  1
+.table II131_1 II131_2 II47
+.default 0
+0 0  1
+.table II1_3 II496
+.default 0
+0  1
+.table Y_16 II497
+.default 0
+0  1
+.table Y_15 II498
+.default 0
+0  1
+.table Y_14 II499
+.default 0
+0  1
+.table II92 II50
+.default 0
+0  1
+.table Y_13 II500
+.default 0
+0  1
+.table II583_1 II583_2 II502
+.default 0
+0 0  1
+.table II587_1 II587_2 II503
+.default 0
+0 0  1
+.table II548 II506
+.default 0
+0  1
+.table Y_13 Y_14 II548
+.default 0
+- 0  1
+0 -  1
+.table II506 Y_15 II552
+.default 0
+- 0  1
+0 -  1
+.table II569 Y_13 II556
+.default 0
+- 0  1
+0 -  1
+.table II500 II569 II560
+.default 0
+- 0  1
+0 -  1
+.table II499 II556 II565
+.default 0
+0 0  1
+.table Clear II496 II569
+.default 0
+0 0  1
+.table II497 II565 Y_15 II583_1
+.default 0
+1 1 1  1
+.table II552 II569 Y_16 II583_2
+.default 0
+1 1 1  1
+.table II548 II569 Y_15 II587_1
+.default 0
+1 1 1  1
+.table II498 II565 II587_2
+.default 0
+1 1  1
+.table II499 II560 II591_1
+.default 0
+- 1  1
+1 -  1
+.table II556 Y_14 II591_2
+.default 0
+- 1  1
+1 -  1
+.table II1_4 II648
+.default 0
+0  1
+.table Y_20 II649
+.default 0
+0  1
+.table Y_19 II650
+.default 0
+0  1
+.table Y_18 II651
+.default 0
+0  1
+.table Y_17 II652
+.default 0
+0  1
+.table II735_1 II735_2 II654
+.default 0
+0 0  1
+.table II739_1 II739_2 II655
+.default 0
+0 0  1
+.table II700 II658
+.default 0
+0  1
+.table Y_17 Y_18 II700
+.default 0
+- 0  1
+0 -  1
+.table II658 Y_19 II704
+.default 0
+- 0  1
+0 -  1
+.table II721 Y_17 II708
+.default 0
+- 0  1
+0 -  1
+.table II652 II721 II712
+.default 0
+- 0  1
+0 -  1
+.table II651 II708 II717
+.default 0
+0 0  1
+.table Clear II648 II721
+.default 0
+0 0  1
+.table II649 II717 Y_19 II735_1
+.default 0
+1 1 1  1
+.table II704 II721 Y_20 II735_2
+.default 0
+1 1 1  1
+.table II700 II721 Y_19 II739_1
+.default 0
+1 1 1  1
+.table II650 II717 II739_2
+.default 0
+1 1  1
+.table II651 II712 II743_1
+.default 0
+- 1  1
+1 -  1
+.table II708 Y_18 II743_2
+.default 0
+- 1  1
+1 -  1
+.table II1_5 II800
+.default 0
+0  1
+.table Y_24 II801
+.default 0
+0  1
+.table Y_23 II802
+.default 0
+0  1
+.table Y_22 II803
+.default 0
+0  1
+.table Y_21 II804
+.default 0
+0  1
+.table II887_1 II887_2 II806
+.default 0
+0 0  1
+.table II891_1 II891_2 II807
+.default 0
+0 0  1
+.table II852 II810
+.default 0
+0  1
+.table Y_21 Y_22 II852
+.default 0
+- 0  1
+0 -  1
+.table II810 Y_23 II856
+.default 0
+- 0  1
+0 -  1
+.table II873 Y_21 II860
+.default 0
+- 0  1
+0 -  1
+.table II804 II873 II864
+.default 0
+- 0  1
+0 -  1
+.table II803 II860 II869
+.default 0
+0 0  1
+.table Clear II800 II873
+.default 0
+0 0  1
+.table II801 II869 Y_23 II887_1
+.default 0
+1 1 1  1
+.table II856 II873 Y_24 II887_2
+.default 0
+1 1 1  1
+.table II852 II873 Y_23 II891_1
+.default 0
+1 1 1  1
+.table II802 II869 II891_2
+.default 0
+1 1  1
+.table II803 II864 II895_1
+.default 0
+- 1  1
+1 -  1
+.table II860 Y_22 II895_2
+.default 0
+- 1  1
+1 -  1
+.table Y_1 Y_2 II92
+.default 0
+- 0  1
+0 -  1
+.table II1_6 II952
+.default 0
+0  1
+.table Y_28 II953
+.default 0
+0  1
+.table Y_27 II954
+.default 0
+0  1
+.table Y_26 II955
+.default 0
+0  1
+.table Y_25 II956
+.default 0
+0  1
+.table II1039_1 II1039_2 II958
+.default 0
+0 0  1
+.table II1043_1 II1043_2 II959
+.default 0
+0 0  1
+.table II50 Y_3 II96
+.default 0
+- 0  1
+0 -  1
+.table II1004 II962
+.default 0
+0  1
+.table II1226 P_1
+.default 0
+0  1
+.table II1350 II1392 P_10
+.default 0
+0 0  1
+.table II1356 P_11
+.default 0
+0  1
+.table II1357 P_12
+.default 0
+0  1
+.table II1417 II1464 P_13
+.default 0
+0 0  1
+.table II1418 II1460 P_14
+.default 0
+0 0  1
+.table II1424 P_15
+.default 0
+0  1
+.table II1425 P_16
+.default 0
+0  1
+.table II1485 II1532 P_17
+.default 0
+0 0  1
+.table II1486 II1528 P_18
+.default 0
+0 0  1
+.table II1492 P_19
+.default 0
+0  1
+.table II1222 II1262 P_2
+.default 0
+0 0  1
+.table II1493 P_20
+.default 0
+0  1
+.table II1553 II1600 P_21
+.default 0
+0 0  1
+.table II1554 II1596 P_22
+.default 0
+0 0  1
+.table II1560 P_23
+.default 0
+0  1
+.table II1561 P_24
+.default 0
+0  1
+.table II1621 II1668 P_25
+.default 0
+0 0  1
+.table II1622 II1664 P_26
+.default 0
+0 0  1
+.table II1628 P_27
+.default 0
+0  1
+.table II1629 P_28
+.default 0
+0  1
+.table II1689 II1729 P_29
+.default 0
+0 0  1
+.table II1228 P_3
+.default 0
+0  1
+.table II1694 P_30
+.default 0
+0  1
+.table II1691 II1698 P_31
+.default 0
+0 0  1
+.table II1692 II1698 Y_31 P_32
+.default 0
+0 0 0  1
+.table II1229 P_4
+.default 0
+0  1
+.table II1281 II1328 P_5
+.default 0
+0 0  1
+.table II1282 II1324 P_6
+.default 0
+0 0  1
+.table II1288 P_7
+.default 0
+0  1
+.table II1289 P_8
+.default 0
+0  1
+.table II1349 II1396 P_9
+.default 0
+0 0  1
+.table II104 II6
+.default 0
+0  1
+.table II46 II3
+.default 0
+0  1
+.table II47 II4
+.default 0
+0  1
+.table II256 II158
+.default 0
+0  1
+.table II198 II155
+.default 0
+0  1
+.table II199 II156
+.default 0
+0  1
+.table II408 II310
+.default 0
+0  1
+.table II350 II307
+.default 0
+0  1
+.table II351 II308
+.default 0
+0  1
+.table II560 II462
+.default 0
+0  1
+.table II502 II459
+.default 0
+0  1
+.table II503 II460
+.default 0
+0  1
+.table II712 II614
+.default 0
+0  1
+.table II654 II611
+.default 0
+0  1
+.table II655 II612
+.default 0
+0  1
+.table II864 II766
+.default 0
+0  1
+.table II806 II763
+.default 0
+0  1
+.table II807 II764
+.default 0
+0  1
+.table II1016 II918
+.default 0
+0  1
+.table II958 II915
+.default 0
+0  1
+.table II959 II916
+.default 0
+0  1
+.table II1168 II1070
+.default 0
+0  1
+.table II1110 II1067
+.default 0
+0  1
+.table II1111 II1068
+.default 0
+0  1
+.table II135_1 II135_2 II5
+.default 0
+- 0  1
+0 -  1
+.table II287_1 II287_2 II157
+.default 0
+- 0  1
+0 -  1
+.table II439_1 II439_2 II309
+.default 0
+- 0  1
+0 -  1
+.table II591_1 II591_2 II461
+.default 0
+- 0  1
+0 -  1
+.table II743_1 II743_2 II613
+.default 0
+- 0  1
+0 -  1
+.table II895_1 II895_2 II765
+.default 0
+- 0  1
+0 -  1
+.table II1047_1 II1047_2 II917
+.default 0
+- 0  1
+0 -  1
+.table II1199_1 II1199_2 II1069
+.default 0
+- 0  1
+0 -  1
+.table II1976 II1996 II2002 II2008 Z
+.default 0
+- - - 0  1
+- - 0 -  1
+- 0 - -  1
+0 - - -  1
+.table II1105 II1160 W
+.default 0
+0 0  1
+.end

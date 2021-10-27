@@ -1,0 +1,770 @@
+.model benchmark/iccas/s510/s510.bench
+.spec benchmark/iccas/s510/s510f.blif
+.inputs john cnt13 cnt21 cnt284 pcnt6 cnt261 cnt44 pcnt12 pcnt17 cnt591 \
+ cnt45 cnt567 pcnt27 cnt283 cnt272 cnt10 cnt511 pcnt241 cnt509 st_5 st_4 \
+ st_3
+.outputs csm pclr pc cclr vsync cblank csync st_2 st_1 st_0
+.default_input_arrival 0 0
+
+.reset IN-st_2
+0
+.latch I5 IN-st_2
+.reset IN-st_1
+0
+.latch I6 IN-st_1
+.reset IN-st_0
+0
+.latch I7 IN-st_0
+
+.table IN-st_0 cnt21 I1038_1
+.default 0
+1 -  1
+- 1  1
+.table I56 I933_1 I104
+.default 0
+- 0  1
+0 -  1
+.table I70 cnt284 I1044_1
+.default 0
+1 1  1
+.table I570 IN-st_0 IN-st_2 I1055_1
+.default 0
+1 1 1  1
+.table I204 I58 I1055_2
+.default 0
+1 1  1
+.table I671 st_5 I1059_1
+.default 0
+1 1  1
+.table I535 I598 I1062_1
+.default 0
+1 1  1
+.table I232 I475 I1065_1
+.default 0
+1 1  1
+.table I590 st_4 I1068_1
+.default 0
+- 1  1
+1 -  1
+.table I551 I671 I1071_1
+.default 0
+1 1  1
+.table I475 I546 I1074_1
+.default 0
+- 1  1
+1 -  1
+.table I104 I539 I1077_1
+.default 0
+1 1  1
+.table I490 I543 I58 I1081_1
+.default 0
+1 1 1  1
+.table I483 IN-st_2 I1081_2
+.default 0
+1 1  1
+.table I130 I787 I1085_1
+.default 0
+1 1  1
+.table I216 I61 I1085_2
+.default 0
+1 1  1
+.table I555 I59 I1089_1
+.default 0
+1 1  1
+.table I478 st_4 I1092_1
+.default 0
+- 1  1
+1 -  1
+.table I506 cnt13 I1095_1
+.default 0
+- 1  1
+1 -  1
+.table I475 I578 I1095_2
+.default 0
+- 1  1
+1 -  1
+.table I209 I506 I1099_1
+.default 0
+- 1  1
+1 -  1
+.table I455 st_5 I1102_1
+.default 0
+1 1  1
+.table I56 I675 I1102_2
+.default 0
+1 1  1
+.table I551 I60 I1106_1
+.default 0
+1 1  1
+.table I543 I57 I1106_2
+.default 0
+1 1  1
+.table I530 I61 I1110_1
+.default 0
+- 1  1
+1 -  1
+.table I234 st_4 I1113_1
+.default 0
+1 1  1
+.table I603 I95 I1116_1
+.default 0
+1 1  1
+.table I230 I61 I1116_2
+.default 0
+1 1  1
+.table I618 I795 I1120_1
+.default 0
+1 1  1
+.table I551 I663 I1123_1
+.default 0
+1 1  1
+.table I131 I130
+.default 0
+0  1
+.table I936_1 I936_2 I131
+.default 0
+0 0  1
+.table I821 I900_1 I2
+.default 0
+- 0  1
+0 -  1
+.table I205 I204
+.default 0
+0  1
+.table I563 I940_1 I205
+.default 0
+0 0  1
+.table I595 I943_1 I207
+.default 0
+0 0  1
+.table I946_1 I946_2 I209
+.default 0
+0 0  1
+.table I950_1 I950_2 I213
+.default 0
+0 0  1
+.table I217 I216
+.default 0
+0  1
+.table I954_1 I954_2 I217
+.default 0
+0 0  1
+.table I958_1 I958_2 I230
+.default 0
+- 0  1
+0 -  1
+.table I810 I962_1 I962_2 I232
+.default 0
+- - 0  1
+- 0 -  1
+0 - -  1
+.table I213 I710 I714 I814 I234
+.default 0
+- - - 0  1
+- - 0 -  1
+- 0 - -  1
+0 - - -  1
+.table I967_1 IN-st_0 I259
+.default 0
+0 0  1
+.table I970_1 IN-st_1 I266
+.default 0
+- 0  1
+0 -  1
+.table I615 st_3 I270
+.default 0
+- 0  1
+0 -  1
+.table I56 I667 I274
+.default 0
+- 0  1
+0 -  1
+.table I60 I975_1 I278
+.default 0
+- 0  1
+0 -  1
+.table I978_1 IN-st_1 I282
+.default 0
+- 0  1
+0 -  1
+.table I539 I574 I298
+.default 0
+- 0  1
+0 -  1
+.table I823 I903_1 I903_2 I3
+.default 0
+- - 0  1
+- 0 -  1
+0 - -  1
+.table I61 I982_1 I326
+.default 0
+- 0  1
+0 -  1
+.table I463 I985_1 I346
+.default 0
+- 0  1
+0 -  1
+.table I346 I347
+.default 0
+0  1
+.table I68 I988_1 I371
+.default 0
+0 0  1
+.table I583 IN-st_0 I390
+.default 0
+- 0  1
+0 -  1
+.table I266 I270 I274 I278 I4
+.default 0
+- - - 0  1
+- - 0 -  1
+- 0 - -  1
+0 - - -  1
+.table I554 I658 I455
+.default 0
+0 0  1
+.table IN-st_1 st_3 I458
+.default 0
+- 0  1
+0 -  1
+.table I463 I462
+.default 0
+0  1
+.table I458 I594 I463
+.default 0
+0 0  1
+.table I535 st_3 I466
+.default 0
+- 0  1
+0 -  1
+.table I466 I467
+.default 0
+0  1
+.table I56 I57 I474
+.default 0
+- 0  1
+0 -  1
+.table I474 I475
+.default 0
+0  1
+.table I547 I739 I478
+.default 0
+- 0  1
+0 -  1
+.table I551 I58 I482
+.default 0
+- 0  1
+0 -  1
+.table I482 I483
+.default 0
+0  1
+.table I487 I486
+.default 0
+0  1
+.table I498 st_4 I487
+.default 0
+0 0  1
+.table cnt284 pcnt17 I490
+.default 0
+- 0  1
+0 -  1
+.table I547 I57 I494
+.default 0
+- 0  1
+0 -  1
+.table I494 I495
+.default 0
+0  1
+.table I511 I587 I498
+.default 0
+- 0  1
+0 -  1
+.table I535 I58 I506
+.default 0
+- 0  1
+0 -  1
+.table st_3 st_5 I511
+.default 0
+0 0  1
+.table I531 I530
+.default 0
+0  1
+.table I574 I59 I531
+.default 0
+0 0  1
+.table I590 IN-st_0 I535
+.default 0
+0 0  1
+.table I546 I60 I539
+.default 0
+0 0  1
+.table I590 I742 I543
+.default 0
+0 0  1
+.table I547 I546
+.default 0
+0  1
+.table I61 IN-st_2 I547
+.default 0
+0 0  1
+.table I57 I61 I551
+.default 0
+0 0  1
+.table I555 I554
+.default 0
+0  1
+.table IN-st_0 IN-st_1 I555
+.default 0
+0 0  1
+.table I56 I658 I559
+.default 0
+0 0  1
+.table st_5 I56
+.default 0
+0  1
+.table I56 I578 I563
+.default 0
+0 0  1
+.table I663 IN-st_2 I566
+.default 0
+- 0  1
+0 -  1
+.table I566 I567
+.default 0
+0  1
+.table st_4 I57
+.default 0
+0  1
+.table I458 I56 I570
+.default 0
+- 0  1
+0 -  1
+.table I57 st_3 I574
+.default 0
+- 0  1
+0 -  1
+.table I61 IN-st_1 I578
+.default 0
+- 0  1
+0 -  1
+.table st_3 I58
+.default 0
+0  1
+.table I511 I60 I583
+.default 0
+0 0  1
+.table IN-st_1 IN-st_2 I587
+.default 0
+0 0  1
+.table IN-st_2 I59
+.default 0
+0  1
+.table IN-st_1 IN-st_2 I590
+.default 0
+- 0  1
+0 -  1
+.table I590 I591
+.default 0
+0  1
+.table I595 I594
+.default 0
+0  1
+.table IN-st_0 IN-st_2 I595
+.default 0
+0 0  1
+.table I56 cnt13 I598
+.default 0
+- 0  1
+0 -  1
+.table IN-st_1 I60
+.default 0
+0  1
+.table I56 I61 I603
+.default 0
+0 0  1
+.table I57 I95 I606
+.default 0
+- 0  1
+0 -  1
+.table I606 I607
+.default 0
+0  1
+.table IN-st_0 I61
+.default 0
+0  1
+.table I475 IN-st_2 I615
+.default 0
+0 0  1
+.table I69 cnt44 I618
+.default 0
+- 0  1
+0 -  1
+.table I78 pcnt241 I627
+.default 0
+0 0  1
+.table I511 IN-st_0 I638
+.default 0
+- 0  1
+0 -  1
+.table I739 IN-st_2 I642
+.default 0
+- 0  1
+0 -  1
+.table I58 IN-st_2 I658
+.default 0
+- 0  1
+0 -  1
+.table I58 IN-st_1 I663
+.default 0
+0 0  1
+.table I61 st_3 I666
+.default 0
+- 0  1
+0 -  1
+.table I666 I667
+.default 0
+0  1
+.table cnt261 I67
+.default 0
+0  1
+.table I458 I59 I671
+.default 0
+0 0  1
+.table I61 IN-st_1 I675
+.default 0
+0 0  1
+.table cnt44 I68
+.default 0
+0  1
+.table pcnt12 I69
+.default 0
+0  1
+.table I57 I795 I694
+.default 0
+- 0  1
+0 -  1
+.table I563 I59 I698
+.default 0
+- 0  1
+0 -  1
+.table pcnt17 I70
+.default 0
+0  1
+.table I467 cnt10 I710
+.default 0
+- 0  1
+0 -  1
+.table I1038_1 I567 I714
+.default 0
+- 0  1
+0 -  1
+.table cnt567 I73
+.default 0
+0  1
+.table I583 I607 I731
+.default 0
+0 0  1
+.table IN-st_1 st_5 I739
+.default 0
+0 0  1
+.table I56 IN-st_0 I742
+.default 0
+- 0  1
+0 -  1
+.table I1044_1 I638 I747
+.default 0
+0 0  1
+.table I458 I547 st_5 I774
+.default 0
+- - 0  1
+- 0 -  1
+0 - -  1
+.table I779 I778
+.default 0
+0  1
+.table I638 I95 st_4 I779
+.default 0
+0 0 0  1
+.table cnt511 I78
+.default 0
+0  1
+.table I559 I67 I675 I782
+.default 0
+- - 0  1
+- 0 -  1
+0 - -  1
+.table I554 I574 st_5 I787
+.default 0
+0 0 0  1
+.table I578 IN-st_2 st_3 I795
+.default 0
+0 0 0  1
+.table I799 I798
+.default 0
+0  1
+.table I56 I58 I59 I799
+.default 0
+0 0 0  1
+.table I455 cnt284 pcnt6 I810
+.default 0
+- - 0  1
+- 0 -  1
+0 - -  1
+.table I58 I595 cnt21 I814
+.default 0
+- - 0  1
+- 0 -  1
+0 - -  1
+.table I1055_1 I1055_2 I821
+.default 0
+0 0  1
+.table I1059_1 I259 I823
+.default 0
+0 0  1
+.table I1062_1 I531 I827
+.default 0
+0 0  1
+.table I1065_1 I371 I831
+.default 0
+0 0  1
+.table I1068_1 I642 I834
+.default 0
+- 0  1
+0 -  1
+.table I1071_1 I487 I837
+.default 0
+0 0  1
+.table I1074_1 I530 I838
+.default 0
+- 0  1
+0 -  1
+.table I1077_1 I799 I841
+.default 0
+0 0  1
+.table I615 st_3 I855
+.default 0
+0 0  1
+.table I1081_1 I1081_2 I861
+.default 0
+0 0  1
+.table I1085_1 I1085_2 I863
+.default 0
+0 0  1
+.table I1089_1 I834 I867
+.default 0
+0 0  1
+.table I1092_1 I566 I870
+.default 0
+- 0  1
+0 -  1
+.table I1095_1 I1095_2 I774 I872
+.default 0
+- - 0  1
+- 0 -  1
+0 - -  1
+.table I1099_1 I831 I863 I874
+.default 0
+- - 0  1
+- 0 -  1
+0 - -  1
+.table I1102_1 I1102_2 I551 I877
+.default 0
+0 0 0  1
+.table I1106_1 I1106_2 I838 I881
+.default 0
+0 0 0  1
+.table I1110_1 I326 I861 I884
+.default 0
+- - 0  1
+- 0 -  1
+0 - -  1
+.table I1113_1 I874 I887
+.default 0
+0 0  1
+.table I1116_1 I1116_2 I870 I889
+.default 0
+0 0 0  1
+.table I1120_1 I884 I895
+.default 0
+0 0  1
+.table I1123_1 I347 I872 I899
+.default 0
+0 0 0  1
+.table I207 I56 I900_1
+.default 0
+- 1  1
+1 -  1
+.table I606 I742 I903_1
+.default 0
+- 1  1
+1 -  1
+.table I478 I58 I903_2
+.default 0
+- 1  1
+1 -  1
+.table I466 I627 I909_1
+.default 0
+- 1  1
+1 -  1
+.table I60 I61 I914_1
+.default 0
+- 1  1
+1 -  1
+.table I458 I494 st_5 I917_1
+.default 0
+- - 1  1
+- 1 -  1
+1 - -  1
+.table I482 I590 I917_2
+.default 0
+- 1  1
+1 -  1
+.table I494 I570 I921_1
+.default 0
+- 1  1
+1 -  1
+.table I731 IN-st_0 I924_1
+.default 0
+- 1  1
+1 -  1
+.table I474 I666 I924_2
+.default 0
+- 1  1
+1 -  1
+.table I530 IN-st_0 I928_1
+.default 0
+- 1  1
+1 -  1
+.table I57 I58 I933_1
+.default 0
+- 1  1
+1 -  1
+.table I59 cnt591 I936_1
+.default 0
+1 1  1
+.table IN-st_2 cnt272 I936_2
+.default 0
+1 1  1
+.table I495 I60 I940_1
+.default 0
+1 1  1
+.table I578 st_3 I943_1
+.default 0
+1 1  1
+.table cnt10 st_5 I946_1
+.default 0
+1 1  1
+.table john st_4 I946_2
+.default 0
+1 1  1
+.table I587 I591 I95
+.default 0
+0 0  1
+.table I455 cnt45 I950_1
+.default 0
+1 1  1
+.table I463 cnt283 I950_2
+.default 0
+1 1  1
+.table I567 cnt509 st_5 I954_1
+.default 0
+1 1 1  1
+.table I104 I587 cnt45 I954_2
+.default 0
+1 1 1  1
+.table I57 I59 I958_1
+.default 0
+- 1  1
+1 -  1
+.table I642 cnt284 I958_2
+.default 0
+- 1  1
+1 -  1
+.table I462 I73 I962_1
+.default 0
+- 1  1
+1 -  1
+.table I466 I78 I962_2
+.default 0
+- 1  1
+1 -  1
+.table I498 I57 I967_1
+.default 0
+1 1  1
+.table I495 I603 I970_1
+.default 0
+- 1  1
+1 -  1
+.table I483 I531 I975_1
+.default 0
+- 1  1
+1 -  1
+.table I483 I747 I978_1
+.default 0
+- 1  1
+1 -  1
+.table I487 I559 I982_1
+.default 0
+- 1  1
+1 -  1
+.table I73 pcnt27 I985_1
+.default 0
+- 1  1
+1 -  1
+.table I694 I698 I988_1
+.default 0
+1 1  1
+.table I555 I798 csm
+.default 0
+0 0  1
+.table I917_1 I917_2 pclr
+.default 0
+- 0  1
+0 -  1
+.table I837 I921_1 pc
+.default 0
+- 0  1
+0 -  1
+.table I390 I486 I546 I877 cclr
+.default 0
+- - - 0  1
+- - 0 -  1
+- 0 - -  1
+0 - - -  1
+.table I855 I867 I914_1 vsync
+.default 0
+- - 0  1
+- 0 -  1
+0 - -  1
+.table I841 I928_1 cblank
+.default 0
+- 0  1
+0 -  1
+.table I881 I924_1 I924_2 csync
+.default 0
+- - 0  1
+- 0 -  1
+0 - -  1
+.table I282 I298 I827 I889 I5
+.default 0
+- - - 0  1
+- - 0 -  1
+- 0 - -  1
+0 - - -  1
+.table I895 I899 I909_1 I6
+.default 0
+- - 0  1
+- 0 -  1
+0 - -  1
+.table I778 I782 I887 I7
+.default 0
+- - 0  1
+- 0 -  1
+0 - -  1
+.table IN-st_2 st_2
+- =IN-st_2
+.table IN-st_1 st_1
+- =IN-st_1
+.table IN-st_0 st_0
+- =IN-st_0
+.end

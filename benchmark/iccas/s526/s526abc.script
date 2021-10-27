@@ -1,0 +1,1 @@
+solve G0,G1,G2,G11,G13,G15,G17,G19,G21,G23,G25,G27,G29,G30 G10,G12,G14,G16,G18,G20,G22,G24,G26,G28 benchmark/iccas/s526/s526.bench benchmark/iccas/s526/s526fle.mv 

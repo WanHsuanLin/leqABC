@@ -1,0 +1,570 @@
+.model benchmark/iccas/s344/s344.bench
+.spec benchmark/iccas/s344/s344a.blif
+.inputs START B0 B1 B2 B3 A0 A1 A2 A3 ACVQN0 MRVQN3 AX2 AX1 AX0
+.outputs P4 P5 P6 P7 P0 P1 P2 P3 CNTVCON2 CNTVCO2 READY CT2 CT1 CT0 ACVQN3 \
+ ACVQN2 ACVQN1 MRVQN2 MRVQN1 MRVQN0 AX3
+.default_input_arrival 0 0
+
+.reset IN-CT2
+0
+.latch CNTVG3VD IN-CT2
+.reset IN-CT1
+0
+.latch CNTVG2VD IN-CT1
+.reset IN-CT0
+0
+.latch CNTVG1VD IN-CT0
+.reset IN-ACVQN3
+0
+.latch ACVG4VD1 IN-ACVQN3
+.reset IN-ACVQN2
+0
+.latch ACVG3VD1 IN-ACVQN2
+.reset IN-ACVQN1
+0
+.latch ACVG2VD1 IN-ACVQN1
+.reset IN-MRVQN2
+0
+.latch MRVG3VD IN-MRVQN2
+.reset IN-MRVQN1
+0
+.latch MRVG2VD IN-MRVQN1
+.reset IN-MRVQN0
+0
+.latch MRVG1VD IN-MRVQN0
+.reset IN-AX3
+0
+.latch AM3 IN-AX3
+
+.table ACVPCN SM0 ACVG1VD1
+.default 0
+- 0  1
+0 -  1
+.table START ACVPCN
+.default 0
+0  1
+.table AD0N AD0
+.default 0
+0  1
+.table AX0 P0 AD0N
+.default 0
+- 0  1
+0 -  1
+.table AD1N AD1
+.default 0
+0  1
+.table AX1 P0 AD1N
+.default 0
+- 0  1
+0 -  1
+.table AD2N AD2
+.default 0
+0  1
+.table AX2 P0 AD2N
+.default 0
+- 0  1
+0 -  1
+.table AD3N AD3
+.default 0
+0  1
+.table IN-AX3 P0 AD3N
+.default 0
+- 0  1
+0 -  1
+.table ADDVG1VCN ADDVC1
+.default 0
+0  1
+.table ADDVG2VCN ADDVC2
+.default 0
+0  1
+.table ADDVG3VCN ADDVC3
+.default 0
+0  1
+.table AD0 P4 ADDVG1VCN
+.default 0
+- 0  1
+0 -  1
+.table ADDVG1VCN ADDVG1VPVOR1NF ADDVG1VP
+.default 0
+- 0  1
+0 -  1
+.table AD0 P4 ADDVG1VPVOR1NF
+.default 0
+- 1  1
+1 -  1
+.table ADDVG2VCNVAD1NF ADDVG2VCNVAD2NF ADDVG2VCN
+.default 0
+0 0  1
+.table AD1 P5 ADDVG2VCNVAD1NF
+.default 0
+1 1  1
+.table ADDVC1 ADDVG2VCNVOR1NF ADDVG2VCNVAD2NF
+.default 0
+1 1  1
+.table ADDVG2VCN ADDVG2VCNVOR2NF ADDVG2VCNVAD3NF
+.default 0
+1 1  1
+.table AD1 ADDVC1 P5 ADDVG2VCNVAD4NF
+.default 0
+1 1 1  1
+.table AD1 P5 ADDVG2VCNVOR1NF
+.default 0
+- 1  1
+1 -  1
+.table AD1 ADDVC1 P5 ADDVG2VCNVOR2NF
+.default 0
+- - 1  1
+- 1 -  1
+1 - -  1
+.table ADDVG2VCNVAD3NF ADDVG2VCNVAD4NF ADDVG2VSN
+.default 0
+0 0  1
+.table ADDVG3VCNVAD1NF ADDVG3VCNVAD2NF ADDVG3VCN
+.default 0
+0 0  1
+.table AD2 P6 ADDVG3VCNVAD1NF
+.default 0
+1 1  1
+.table ADDVC2 ADDVG3VCNVOR1NF ADDVG3VCNVAD2NF
+.default 0
+1 1  1
+.table ADDVG3VCN ADDVG3VCNVOR2NF ADDVG3VCNVAD3NF
+.default 0
+1 1  1
+.table AD2 ADDVC2 P6 ADDVG3VCNVAD4NF
+.default 0
+1 1 1  1
+.table AD2 P6 ADDVG3VCNVOR1NF
+.default 0
+- 1  1
+1 -  1
+.table AD2 ADDVC2 P6 ADDVG3VCNVOR2NF
+.default 0
+- - 1  1
+- 1 -  1
+1 - -  1
+.table ADDVG3VCNVAD3NF ADDVG3VCNVAD4NF ADDVG3VSN
+.default 0
+0 0  1
+.table ADDVG4VCNVAD1NF ADDVG4VCNVAD2NF ADDVG4VCN
+.default 0
+0 0  1
+.table AD3 P7 ADDVG4VCNVAD1NF
+.default 0
+1 1  1
+.table ADDVC3 ADDVG4VCNVOR1NF ADDVG4VCNVAD2NF
+.default 0
+1 1  1
+.table ADDVG4VCN ADDVG4VCNVOR2NF ADDVG4VCNVAD3NF
+.default 0
+1 1  1
+.table AD3 ADDVC3 P7 ADDVG4VCNVAD4NF
+.default 0
+1 1 1  1
+.table AD3 P7 ADDVG4VCNVOR1NF
+.default 0
+- 1  1
+1 -  1
+.table AD3 ADDVC3 P7 ADDVG4VCNVOR2NF
+.default 0
+- - 1  1
+- 1 -  1
+1 - -  1
+.table ADDVG4VCNVAD3NF ADDVG4VCNVAD4NF ADDVG4VSN
+.default 0
+0 0  1
+.table INIT READY ADSH
+.default 0
+0 0  1
+.table AMVG2VX AM0
+.default 0
+0  1
+.table AMVG3VX AM1
+.default 0
+0  1
+.table AMVG4VX AM2
+.default 0
+0  1
+.table AMVS0N AX0 AMVG2VG1VAD1NF
+.default 0
+1 1  1
+.table A0 AMVG2VS0P AMVG2VG1VAD2NF
+.default 0
+1 1  1
+.table AMVS0N AMVG2VS0P
+.default 0
+0  1
+.table AMVG2VG1VAD1NF AMVG2VG1VAD2NF AMVG2VX
+.default 0
+0 0  1
+.table AMVS0N AX1 AMVG3VG1VAD1NF
+.default 0
+1 1  1
+.table A1 AMVG3VS0P AMVG3VG1VAD2NF
+.default 0
+1 1  1
+.table AMVS0N AMVG3VS0P
+.default 0
+0  1
+.table AMVG3VG1VAD1NF AMVG3VG1VAD2NF AMVG3VX
+.default 0
+0 0  1
+.table AMVS0N AX2 AMVG4VG1VAD1NF
+.default 0
+1 1  1
+.table A2 AMVG4VS0P AMVG4VG1VAD2NF
+.default 0
+1 1  1
+.table AMVS0N AMVG4VS0P
+.default 0
+0  1
+.table AMVG4VG1VAD1NF AMVG4VG1VAD2NF AMVG4VX
+.default 0
+0 0  1
+.table AMVS0N IN-AX3 AMVG5VG1VAD1NF
+.default 0
+1 1  1
+.table A3 AMVG5VS0P AMVG5VG1VAD2NF
+.default 0
+1 1  1
+.table AMVS0N AMVG5VS0P
+.default 0
+0  1
+.table AMVG5VG1VAD1NF AMVG5VG1VAD2NF AMVG5VX
+.default 0
+0 0  1
+.table INIT AMVS0N
+.default 0
+0  1
+.table BMVG2VX BM0
+.default 0
+0  1
+.table BMVG3VX BM1
+.default 0
+0  1
+.table BMVG4VX BM2
+.default 0
+0  1
+.table BMVG5VX BM3
+.default 0
+0  1
+.table BMVS0N P0 BMVG2VG1VAD1NF
+.default 0
+1 1  1
+.table B0 BMVG2VS0P BMVG2VG1VAD2NF
+.default 0
+1 1  1
+.table BMVS0N BMVG2VS0P
+.default 0
+0  1
+.table BMVG2VG1VAD1NF BMVG2VG1VAD2NF BMVG2VX
+.default 0
+0 0  1
+.table BMVS0N P1 BMVG3VG1VAD1NF
+.default 0
+1 1  1
+.table B1 BMVG3VS0P BMVG3VG1VAD2NF
+.default 0
+1 1  1
+.table BMVS0N BMVG3VS0P
+.default 0
+0  1
+.table BMVG3VG1VAD1NF BMVG3VG1VAD2NF BMVG3VX
+.default 0
+0 0  1
+.table BMVS0N P2 BMVG4VG1VAD1NF
+.default 0
+1 1  1
+.table B2 BMVG4VS0P BMVG4VG1VAD2NF
+.default 0
+1 1  1
+.table BMVS0N BMVG4VS0P
+.default 0
+0  1
+.table BMVG4VG1VAD1NF BMVG4VG1VAD2NF BMVG4VX
+.default 0
+0 0  1
+.table BMVS0N P3 BMVG5VG1VAD1NF
+.default 0
+1 1  1
+.table B3 BMVG5VS0P BMVG5VG1VAD2NF
+.default 0
+1 1  1
+.table BMVS0N BMVG5VS0P
+.default 0
+0  1
+.table BMVG5VG1VAD1NF BMVG5VG1VAD2NF BMVG5VX
+.default 0
+0 0  1
+.table READYN BMVS0N
+.default 0
+0  1
+.table CNTVG1VQN CNTVCO0
+.default 0
+0  1
+.table CNTVCON0 CNTVG2VQN CNTVCO1
+.default 0
+0 0  1
+.table IN-CT0 CNTVCON0
+.default 0
+0  1
+.table CNTVCO0 IN-CT1 CNTVCON1
+.default 0
+- 0  1
+0 -  1
+.table READY CNTVG1VD1
+.default 0
+0  1
+.table IN-CT0 CNTVG1VQN
+.default 0
+0  1
+.table CNTVG1VZ1 CNTVG1VZ
+.default 0
+0  1
+.table CNTVG1VD1 IN-CT0 CNTVG1VZ1
+.default 0
+- 0  1
+0 -  1
+.table CNTVCON0 READY CNTVG2VD1
+.default 0
+0 0  1
+.table CNTVG2VD1 IN-CT1 CNTVG2VG2VOR1NF
+.default 0
+- 1  1
+1 -  1
+.table IN-CT1 CNTVG2VQN
+.default 0
+0  1
+.table CNTVG2VG2VOR1NF CNTVG2VZ1 CNTVG2VZ
+.default 0
+- 0  1
+0 -  1
+.table CNTVG2VD1 IN-CT1 CNTVG2VZ1
+.default 0
+- 0  1
+0 -  1
+.table CNTVCON1 CNTVG3VD1
+.default 0
+0  1
+.table CNTVG3VD1 IN-CT2 CNTVG3VG2VOR1NF
+.default 0
+- 1  1
+1 -  1
+.table IN-CT2 CNTVG3VQN
+.default 0
+0  1
+.table CNTVG3VG2VOR1NF CNTVG3VZ1 CNTVG3VZ
+.default 0
+- 0  1
+0 -  1
+.table CNTVG3VD1 IN-CT2 CNTVG3VZ1
+.default 0
+- 0  1
+0 -  1
+.table ADDVG4VCN CO
+.default 0
+0  1
+.table IN-CT1 CT1N
+.default 0
+0  1
+.table IN-CT0 IN-CT1 IN-CT2 INIT
+.default 0
+0 0 0  1
+.table ADSH P1 MRVG1VDVAD1NF
+.default 0
+1 1  1
+.table BM0 MRVSHLDN MRVG1VDVAD2NF
+.default 0
+1 1  1
+.table ADSH P2 MRVG2VDVAD1NF
+.default 0
+1 1  1
+.table BM1 MRVSHLDN MRVG2VDVAD2NF
+.default 0
+1 1  1
+.table ADSH P3 MRVG3VDVAD1NF
+.default 0
+1 1  1
+.table BM2 MRVSHLDN MRVG3VDVAD2NF
+.default 0
+1 1  1
+.table MRVG4VDVAD1NF MRVG4VDVAD2NF MRVG4VD
+.default 0
+0 0  1
+.table ADSH S0 MRVG4VDVAD1NF
+.default 0
+1 1  1
+.table BM3 MRVSHLDN MRVG4VDVAD2NF
+.default 0
+1 1  1
+.table ADSH MRVSHLDN
+.default 0
+0  1
+.table CT1N IN-CT0 IN-CT2 READYN
+.default 0
+- - 0  1
+0 - -  1
+- 0 -  1
+.table ADDVG1VP S0
+.default 0
+0  1
+.table ADDVG2VSN S1
+.default 0
+0  1
+.table ADDVG3VSN S2
+.default 0
+0  1
+.table ADDVG4VSN S3
+.default 0
+0  1
+.table SMVG2VX SM0
+.default 0
+0  1
+.table SMVG3VX SM1
+.default 0
+0  1
+.table SMVG4VX SM2
+.default 0
+0  1
+.table SMVG5VX SM3
+.default 0
+0  1
+.table SMVS0N P4 SMVG2VG1VAD1NF
+.default 0
+1 1  1
+.table S1 SMVG2VS0P SMVG2VG1VAD2NF
+.default 0
+1 1  1
+.table SMVS0N SMVG2VS0P
+.default 0
+0  1
+.table SMVG2VG1VAD1NF SMVG2VG1VAD2NF SMVG2VX
+.default 0
+0 0  1
+.table SMVS0N P5 SMVG3VG1VAD1NF
+.default 0
+1 1  1
+.table S2 SMVG3VS0P SMVG3VG1VAD2NF
+.default 0
+1 1  1
+.table SMVS0N SMVG3VS0P
+.default 0
+0  1
+.table SMVG3VG1VAD1NF SMVG3VG1VAD2NF SMVG3VX
+.default 0
+0 0  1
+.table SMVS0N P6 SMVG4VG1VAD1NF
+.default 0
+1 1  1
+.table S3 SMVG4VS0P SMVG4VG1VAD2NF
+.default 0
+1 1  1
+.table SMVS0N SMVG4VS0P
+.default 0
+0  1
+.table SMVG4VG1VAD1NF SMVG4VG1VAD2NF SMVG4VX
+.default 0
+0 0  1
+.table SMVS0N P7 SMVG5VG1VAD1NF
+.default 0
+1 1  1
+.table CO SMVG5VS0P SMVG5VG1VAD2NF
+.default 0
+1 1  1
+.table SMVS0N SMVG5VS0P
+.default 0
+0  1
+.table SMVG5VG1VAD1NF SMVG5VG1VAD2NF SMVG5VX
+.default 0
+0 0  1
+.table ADSH SMVS0N
+.default 0
+0  1
+.table ACVQN0 P4
+.default 0
+0  1
+.table IN-ACVQN1 P5
+.default 0
+0  1
+.table IN-ACVQN2 P6
+.default 0
+0  1
+.table IN-ACVQN3 P7
+.default 0
+0  1
+.table IN-MRVQN0 P0
+.default 0
+0  1
+.table IN-MRVQN1 P1
+.default 0
+0  1
+.table IN-MRVQN2 P2
+.default 0
+0  1
+.table MRVQN3 P3
+.default 0
+0  1
+.table CNTVCO1 IN-CT2 CNTVCON2
+.default 0
+- 0  1
+0 -  1
+.table CNTVCON1 CNTVG3VQN CNTVCO2
+.default 0
+0 0  1
+.table READYN READY
+.default 0
+0  1
+.table CNTVG3VZ START CNTVG3VD
+.default 0
+0 0  1
+.table CNTVG2VZ START CNTVG2VD
+.default 0
+0 0  1
+.table CNTVG1VZ START CNTVG1VD
+.default 0
+0 0  1
+.table ACVPCN SM3 ACVG4VD1
+.default 0
+- 0  1
+0 -  1
+.table ACVPCN SM2 ACVG3VD1
+.default 0
+- 0  1
+0 -  1
+.table ACVPCN SM1 ACVG2VD1
+.default 0
+- 0  1
+0 -  1
+.table MRVG3VDVAD1NF MRVG3VDVAD2NF MRVG3VD
+.default 0
+0 0  1
+.table MRVG2VDVAD1NF MRVG2VDVAD2NF MRVG2VD
+.default 0
+0 0  1
+.table MRVG1VDVAD1NF MRVG1VDVAD2NF MRVG1VD
+.default 0
+0 0  1
+.table AMVG5VX AM3
+.default 0
+0  1
+.table IN-CT2 CT2
+- =IN-CT2
+.table IN-CT1 CT1
+- =IN-CT1
+.table IN-CT0 CT0
+- =IN-CT0
+.table IN-ACVQN3 ACVQN3
+- =IN-ACVQN3
+.table IN-ACVQN2 ACVQN2
+- =IN-ACVQN2
+.table IN-ACVQN1 ACVQN1
+- =IN-ACVQN1
+.table IN-MRVQN2 MRVQN2
+- =IN-MRVQN2
+.table IN-MRVQN1 MRVQN1
+- =IN-MRVQN1
+.table IN-MRVQN0 MRVQN0
+- =IN-MRVQN0
+.table IN-AX3 AX3
+- =IN-AX3
+.end
