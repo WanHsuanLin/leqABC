@@ -72,6 +72,7 @@ int Leq_CommandSolve(Abc_Frame_t* pAbc, int argc, char** argv) {
   int qSolver = 0;
   bool fFileUV = 0;
   bool bOutput = 0;
+  bool bOpt = 0;
   int fUseCommand = 0;
 
   // nInput = Abc_NtkPiNum(pNtkF)+Abc_NtkPoNum(pNtkF);
@@ -98,7 +99,7 @@ int Leq_CommandSolve(Abc_Frame_t* pAbc, int argc, char** argv) {
   pPars->TimeLimit  = 0;
 
   Extra_UtilGetoptReset();
-  while ((c = Extra_UtilGetopt(argc, argv, "fhvcidzo")) != EOF) {
+  while ((c = Extra_UtilGetopt(argc, argv, "fhvcidzow")) != EOF) {
     switch (c) {
       case 'h':
         goto usage;
@@ -107,6 +108,9 @@ int Leq_CommandSolve(Abc_Frame_t* pAbc, int argc, char** argv) {
         break;
       case 'o':
         bOutput ^= 1;
+        break;
+      case 'w':
+        bOpt ^= 1;
         break;
       case 'z':
         bDirectVerifyDeter ^= 1;
@@ -208,13 +212,16 @@ int Leq_CommandSolve(Abc_Frame_t* pAbc, int argc, char** argv) {
   globalUtilOptind++;
   pArgvNew = argv + globalUtilOptind;
   nArgcNew = argc - globalUtilOptind;
-  cerr << "nArgcNew : " << nArgcNew << endl;
-  // Abc_NtkPrepareTwoNtks( stdout, NULL, pArgvNew, nArgcNew, &pNtkS, &pNtkF, &fDelete1, &fDelete2, 1 );
-  Abc_NtkPrepareTwoNtks( stdout, NULL, pArgvNew, nArgcNew, &pNtkSTmp, &pNtkFTmp, &fDelete1, &fDelete2, 1 );
-  pNtkSTmp = Abc_NtkDarLatchSweep( pNtkSTmp, 1, 1, 1, 0, 1, 512, 1, 1 );
-  pNtkFTmp = Abc_NtkDarLatchSweep( pNtkFTmp, 1, 1, 1, 0, 1, 512, 1, 1 );
-  pNtkF = Abc_NtkDarSeqSweep( pNtkFTmp, pPars );
-  pNtkS = Abc_NtkDarSeqSweep( pNtkSTmp, pPars );
+  // cerr << "nArgcNew : " << nArgcNew << endl;
+  if(bOpt){
+    Abc_NtkPrepareTwoNtks( stdout, NULL, pArgvNew, nArgcNew, &pNtkSTmp, &pNtkFTmp, &fDelete1, &fDelete2, 1 );
+    pNtkSTmp = Abc_NtkDarLatchSweep( pNtkSTmp, 1, 1, 1, 0, 1, 512, 1, 1 );
+    pNtkFTmp = Abc_NtkDarLatchSweep( pNtkFTmp, 1, 1, 1, 0, 1, 512, 1, 1 );
+    pNtkF = Abc_NtkDarSeqSweep( pNtkFTmp, pPars );
+    pNtkS = Abc_NtkDarSeqSweep( pNtkSTmp, pPars );
+  }
+  else
+    Abc_NtkPrepareTwoNtks( stdout, NULL, pArgvNew, nArgcNew, &pNtkS, &pNtkF, &fDelete1, &fDelete2, 1 );
   // cerr << "pi num of pNtkF" << Abc_NtkPiNum(pNtkF) << endl; 
   Abc_NtkDelete(pNtkFTmp);
   Abc_NtkDelete(pNtkSTmp);
@@ -340,12 +347,13 @@ int Leq_CommandSolve(Abc_Frame_t* pAbc, int argc, char** argv) {
   return 0;
 
 usage:
-  Abc_Print(-2, "usage: [-i num] [-d file] [-v file] [-z file] [-fhoc] <u> <v> <baS> <baF>\n");
+  Abc_Print(-2, "usage: [-i num] [-d file] [-v file] [-z file] [-fhocw] <u> <v> <baS> <baF>\n");
   Abc_Print(-2, "\t        solves langage equation X given F and S. \n");
   Abc_Print(-2, "\t        enter u, v with each input separated by ','\n");
   Abc_Print(-2, "\t-o     : write the resulted sequential circuit representing the solution rABA is written in rABAX.blif\n");
-  Abc_Print(-2, "\t        with the pi not in <u> <v> being the psuedo inputs for rABA\n");
+  Abc_Print(-2, "\t         with the pi not in <u> <v> being the psuedo inputs for rABA\n");
   Abc_Print(-2, "\t-v file: verify \n");
+  Abc_Print(-2, "\t-w     : perform optimization for S and F \n");
   Abc_Print(-2, "\t-f     : U V are given in files  \n");
   // Abc_Print(-2, "\t-c num : quantifier elimination. 0 for qvar, 1 for cadet  \n");
   Abc_Print(-2, "\t-i num : verify command for R \subset X. 0 for dsec, 1 for pdr, 2 for dprove, 3 for int\n");
