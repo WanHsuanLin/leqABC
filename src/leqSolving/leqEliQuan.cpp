@@ -29,12 +29,18 @@ void Leq_EliminateVar(Abc_Ntk_t * &pNtk, unsigned uBegin, Leq_Ba_t * pBa){ //typ
   pParams->fTryProve  =    0; // tries to solve the final miter
   pParams->fVerbose   =    0; // the verbosiness flag
   pParams->fVerboseP  =    0; // the verbosiness flag
+  abctime clk = Abc_Clock();
   for(i = Abc_NtkPiNum(pNtk)-1-origLatchNum; i >= 0 ; --i){
     if ( Abc_NtkGetChoiceNum( pNtk ) ){
       Abc_Print( -1, "This command cannot be applied to an AIG with choice nodes.\n" );
     }
     type = (i < Leq_BaNumInactInput(pBa) ) ? pBa->_bNondeterType : (i > uBegin);
     if(fVerbose) cerr << "cofactor input " << Abc_ObjName(Abc_NtkPi(pNtk, i)) << " with type " << type << endl; 
+    if((double)(Abc_Clock() - clk )/(double)CLOCKS_PER_SEC > 3600){
+    // if((double)(Abc_Clock() - clk )/(double)CLOCKS_PER_SEC > 30){
+      cerr << "!!!!!!!runtime over 3600s, program stop!!!!!!!" << endl;
+      exit(0);
+    }
     Abc_NtkQuantify( pNtk, type, i, fVerbose );
     // cerr << "finish input " << endl;
     // clean temporary storage for the cofactors
